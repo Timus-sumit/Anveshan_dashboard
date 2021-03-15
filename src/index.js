@@ -6,6 +6,7 @@ import AppRoute,{history}from './router/AppRoute';
 import configureStore from './store/store';
 import {firebase} from './firebase/firebase';
 import{login,logout} from './actions/auth';
+import {createEvents, setEvents} from './actions/event';
 
 
 const store = configureStore();
@@ -30,10 +31,12 @@ ReactDOM.render(<p>Loading...</p>,document.getElementById('root'));
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     store.dispatch(login({uid:user.uid, name:user.displayName, email:user.email}))
-    renderApp();
-    if(history.location.pathname==='/'){
-      history.push('/dashboard')
-    }
+    store.dispatch(setEvents()).then(()=>{
+      renderApp();
+      if(history.location.pathname==='/'){
+        history.push('/dashboard') 
+      }
+    }) 
   }else{
     store.dispatch(logout());
     renderApp();
