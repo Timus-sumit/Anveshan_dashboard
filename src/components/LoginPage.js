@@ -8,7 +8,7 @@ import {connect} from 'react-redux';
 
 const LoginPage = ({startLogin})=>{
     return(
-        <div>
+        <div className="hammer-background">
             <main className="d-flex align-items-center min-vh-100 py-3 py-md-0">
       <div className="container">
         <div className="card login-card">
