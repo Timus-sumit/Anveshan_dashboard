@@ -5,16 +5,7 @@ import {connect} from 'react-redux';
 import {
     Button,
     Card,
-    CardHeader,
-    CardBody,
-    FormGroup,
-    Form,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
-    Row,
-    Col
+    CardHeader
 } from "reactstrap";
 // <button onClick={startLogin}>Login</button>
 const LoginPage = ({startLogin})=>{

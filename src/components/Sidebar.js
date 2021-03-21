@@ -147,7 +147,7 @@ class Sidebar extends React.Component {
                             <i className="ni ni-single-02" />
                             <span>My profile</span>
                         </DropdownItem>
-                        <DropdownItem href="#pablo" onClick={this.props.startLogout}>
+                        <DropdownItem  onClick={this.props.startLogout}>
                             <i className="ni ni-user-run" />
                             <span>Logout</span>
                         </DropdownItem>
@@ -158,6 +158,11 @@ class Sidebar extends React.Component {
                     <Link to="/dashboard">
                         <h3>Dashboard</h3>
                     </Link>
+                </NavItem>
+                <NavItem className="pl-4">
+                    <Button color="secondary" onClick={this.props.startLogout}>
+                      Logout
+                    </Button>
                 </NavItem>
             </Nav>
             {/* Divider */}
