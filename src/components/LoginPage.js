@@ -36,7 +36,6 @@ const LoginPage = ({startLogin})=>{
                             <Button
                                 className="btn-neutral btn-icon"
                                 color="default"
-                                href="#pablo"
                                 onClick={startLogin}
                             >
                   <span className="btn-inner--icon">

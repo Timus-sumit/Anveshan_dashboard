@@ -2,13 +2,17 @@ import React from 'react';
 import {Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
+import 'reactstrap';
 
 const PrivateRoute = ({isAuthenticated,component:Component,...rest})=>(
     <Route {...rest} component={(props)=>(
         isAuthenticated?(
             <div>
-                <Header />
-                <Component {...props}/>
+                <Sidebar />
+                <div className="main-content pl-5 pt-5">
+                   <Component {...props}/>
+                </div> 
             </div>):(<Redirect to='/' />)
     )} />
 )
