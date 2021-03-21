@@ -1,7 +1,7 @@
 const authReducer = (state={},action)=>{
     switch (action.type){
         case 'LOGIN':
-            return {uid : action.uid, name: action.name, email:action.email };
+            return {uid : action.uid, name: action.name, email:action.email, pic:action.pic };
         case 'LOGOUT':
             return {};
         default :

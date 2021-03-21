@@ -1,0 +1,13 @@
+.box-layout{
+    background: url('../../assets/img/login_bg.jpg');
+    background-size:cover ;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-layout__card{
+    width: 400px;
+}

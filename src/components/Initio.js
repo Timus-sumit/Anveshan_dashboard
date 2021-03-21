@@ -1,6 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { editEvents } from '../actions/event';
+import{
+    Container
+} from 'reactstrap';
 class Initio extends React.Component{
     constructor(props){
         super(props);
@@ -11,7 +14,7 @@ class Initio extends React.Component{
     }
    render(){
     return(
-        <div>
+        <Container fluid className="pt-5">
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
@@ -25,7 +28,7 @@ class Initio extends React.Component{
             }}>Register !</button>
             }
             
-        </div>
+        </Container>
     )
 }
 }
