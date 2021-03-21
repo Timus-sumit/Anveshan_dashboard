@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 import { createEvents } from '../actions/event';
+import {Button} from 'reactstrap'; 
 
 class Dashboard extends React.Component{
     constructor(props){
@@ -15,14 +16,14 @@ class Dashboard extends React.Component{
         <div>
             <h1>Dashboard</h1>
             <p>Welcome {this.props.user.name} !</p>
-            <p><button onClick={()=>{
+            <p><Button color="success" onClick={()=>{
                 this.props.dispatch(createEvents());
                 this.setState(()=>{
                     return{
                         hasPayed:true
                     }
                 })
-            }}  disabled={this.state.hasPayed} >Make Payment !</button></p>
+            }}  disabled={this.state.hasPayed} >Make Payment !</Button></p>
             <p><NavLink to="/Literatium" exact={true}>Literatium</NavLink></p>
             <p><NavLink to="/Internado" exact={true}>Internado</NavLink></p>
             <p><NavLink to="/CodeMet" exact={true}>CodeMet</NavLink></p>
