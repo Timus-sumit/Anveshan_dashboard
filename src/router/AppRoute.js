@@ -10,10 +10,11 @@ import Literatium from '../components/Literatium';
 import Internado from '../components/Internado';
 import CodeMet from '../components/CodeMet';
 import Initio from '../components/Initio';
-import Microskopia from '../components/Microskopia';
-import Quitation from '../components/Quitation';
+import Metcon from '../components/Metcon';
+import Snapshot from '../components/Snapshot';
 import Rivista from '../components/Rivista';
 import Quarks from '../components/Quarks';
+import Events from '../components/Events';
 
 export const history = createHistory();
 
@@ -24,12 +25,13 @@ const AppRoute=()=>{
                 <Switch>
                     <PublicRoute path="/" component={LoginPage} exact={true}/>
                     <PrivateRoute path="/dashboard" component={Dashboard}/>
+                    <PrivateRoute path="/events" component={Events}/>
                     <PrivateRoute path="/Literatium" component={Literatium}/>
                     <PrivateRoute path="/Internado" component={Internado}/>
                     <PrivateRoute path="/CodeMet" component={CodeMet}/>
                     <PrivateRoute path="/Initio" component={Initio}/>
-                    <PrivateRoute path="/Microskopia" component={Microskopia}/>
-                    <PrivateRoute path="/Quitation" component={Quitation}/>
+                    <PrivateRoute path="/Metcon" component={Metcon}/>
+                    <PrivateRoute path="/Snapshot" component={Snapshot}/>
                     <PrivateRoute path="/Rivista" component={Rivista}/>
                     <PrivateRoute path="/Quarks" component={Quarks}/>
                 </Switch>

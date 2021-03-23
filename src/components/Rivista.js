@@ -15,13 +15,15 @@ class Rivista extends React.Component{
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.state.hasRegistered ? <button onClick={()=>{
+            {this.props.event.Rivista ? <button onClick={()=>{
                 this.props.dispatch(editEvents({Rivista:false},this.state.type))
                 this.setState(()=>({hasRegistered:false}))
+                window.location.reload();
             }}>Unregister</button>:
             <button onClick={()=>{
                 this.props.dispatch(editEvents({Rivista:true},this.state.type));
                 this.setState(()=>({hasRegistered:true}))
+                window.location.reload();
             }}>Register !</button>
             }
             

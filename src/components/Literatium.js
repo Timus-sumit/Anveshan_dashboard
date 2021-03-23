@@ -15,13 +15,15 @@ class Literatium extends React.Component{
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.state.hasRegistered ? <button onClick={()=>{
+            {this.props.event.Literatium? <button onClick={()=>{
                 this.props.dispatch(editEvents({Literatium:false},this.state.type))
                 this.setState(()=>({hasRegistered:false}))
+                window.location.reload();
             }}>Unregister</button>:
             <button onClick={()=>{
                 this.props.dispatch(editEvents({Literatium:true},this.state.type));
                 this.setState(()=>({hasRegistered:true}))
+                window.location.reload();
             }}>Register !</button>
             }
             

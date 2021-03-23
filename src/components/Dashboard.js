@@ -2,40 +2,37 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
 import { createEvents } from '../actions/event';
-import {Button} from 'reactstrap'; 
+import {Button,Row,Col,Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle} from 'reactstrap'; 
+import EventItem from './EventItem';
 
-class Dashboard extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            hasPayed:false
-        }
-    }
-    render(){
+const Dashboard = (props)=>{
+    console.log(props.event.Literatium)
     return(
         <div>
             <h1>Dashboard</h1>
-            <p>Welcome {this.props.user.name} !</p>
+            <p>Welcome {props.user.name} !</p>
             <p><Button color="success" onClick={()=>{
-                this.props.dispatch(createEvents());
-                this.setState(()=>{
-                    return{
-                        hasPayed:true
-                    }
-                })
-            }}  disabled={this.state.hasPayed} >Make Payment !</Button></p>
-            <p><NavLink to="/Literatium" exact={true}>Literatium</NavLink></p>
-            <p><NavLink to="/Internado" exact={true}>Internado</NavLink></p>
-            <p><NavLink to="/CodeMet" exact={true}>CodeMet</NavLink></p>
-            <p><NavLink to="/Initio" exact={true}>Initio</NavLink></p>
-            <p><NavLink to="/Microskopia" exact={true}>Microskopia</NavLink></p>
-            <p><NavLink to="/Quitation" exact={true}>Quitation</NavLink></p>
-            <p><NavLink to="/Rivista" exact={true}>Rivista</NavLink></p>
-            <p><NavLink to="/Quarks" exact={true}>Quarks</NavLink></p>            
+                props.dispatch(createEvents());
+               
+            }}   >Make Payment !</Button></p>
+            <hr/>
+            <Card>
+            <Row className="py-3">
+            {props.event.Literatium && <Col sm='12' md='4' className="text-center"><NavLink to="/Literatium" exact={true}><EventItem imgURL={'/events/8.png'} eventName={'Literatium'}/></NavLink></Col>}
+            {props.event.Internado&&<Col sm='12' md='4' className="text-center"><NavLink to="/Internado" exact={true}><EventItem imgURL={'/events/2.png'} eventName={'Internado'}/></NavLink></Col>}
+            {props.event.CodeMet&&<Col sm='12' md='4' className="text-center"><NavLink to="/CodeMet" exact={true}><EventItem imgURL={'/events/3.png'} eventName={'Codemet'}/></NavLink></Col>}
+            {props.event.Initio&&<Col sm='12' md='4' className="text-center"><NavLink to="/Initio" exact={true}><EventItem imgURL={'/events/1.png'} eventName={'Initio'}/></NavLink></Col>}
+            {props.event.Metcon&&<Col sm='12' md='4' className="text-center"><NavLink to="/Metcon" exact={true}><EventItem imgURL={'/events/6.jpeg'} eventName={'Metcon'}/></NavLink></Col>}
+            {props.event.Snapshot&&<Col sm='12' md='4' className="text-center"><NavLink to="/Snapshot" exact={true}><EventItem imgURL={'/events/7.png'} eventName={'Snapshot'}/></NavLink></Col>}
+            {props.event.Rivista&&<Col sm='12' md='4' className="text-center"><NavLink to="/Rivista" exact={true}><EventItem imgURL={'/events/5.png'} eventName={'Rivista'}/></NavLink></Col>}
+            {props.event.Quarks&&<Col sm='12' md='4' className="text-center"><NavLink to="/Quarks" exact={true}><EventItem imgURL={'/events/4.png'} eventName={'Quarks'}/></NavLink></Col> } 
+            </Row>
+            </Card> 
         </div>
     );
 }
-}
+
 
 const mapStateToProps=(state)=>{
     return{

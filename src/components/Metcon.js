@@ -1,12 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { editEvents } from '../actions/event';
-class Quitation extends React.Component{
+class Metcon extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            type:'Quitation',
-            hasRegistered :this.props.event.Quitation
+            type:'Metcon',
+            hasRegistered :this.props.event.Metcon
         }
     }
    render(){
@@ -15,13 +15,15 @@ class Quitation extends React.Component{
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.state.hasRegistered ? <button onClick={()=>{
-                this.props.dispatch(editEvents({Quitation:false},this.state.type))
+            {this.props.event.Metcon ? <button onClick={()=>{
+                this.props.dispatch(editEvents({Metcon:false},this.state.type))
                 this.setState(()=>({hasRegistered:false}))
+                window.location.reload();
             }}>Unregister</button>:
             <button onClick={()=>{
-                this.props.dispatch(editEvents({Quitation:true},this.state.type));
+                this.props.dispatch(editEvents({Metcon:true},this.state.type));
                 this.setState(()=>({hasRegistered:true}))
+                window.location.reload();
             }}>Register !</button>
             }
             
@@ -35,4 +37,4 @@ const mapStateToProps=(state)=>{
     }
 }
 
-export default connect(mapStateToProps)(Quitation);
+export default connect(mapStateToProps)(Metcon);

@@ -11,6 +11,7 @@ import "./assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./assets/scss/argon-dashboard-react.scss";
 import "./styles/styles.scss";
+import { setEvents } from './actions/event';
 
 const store = configureStore();
 
@@ -34,10 +35,17 @@ ReactDOM.render(<p>Loading...</p>,document.getElementById('root'));
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     store.dispatch(login({uid:user.uid, name:user.displayName, email:user.email, pic:user.photoURL}))
-    renderApp();
-    if(history.location.pathname==='/'){
-      history.push('/dashboard')
-    }
+    store.dispatch(setEvents()).then(()=>{
+      renderApp();
+      if(history.location.pathname==='/'){
+        history.push('/dashboard')
+      }
+    })
+    // renderApp();
+    // if(history.location.pathname==='/'){
+    //   history.push('/dashboard')
+    // }
+    
   }else{
     store.dispatch(logout());
     renderApp();

@@ -1,12 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { editEvents } from '../actions/event';
-class Microskopia extends React.Component{
+class Snapshot extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            type:'Microskopia',
-            hasRegistered :this.props.event.Microskopia
+            type:'Snapshot',
+            hasRegistered :this.props.event.Snapshot
         }
     }
    render(){
@@ -15,13 +15,15 @@ class Microskopia extends React.Component{
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.state.hasRegistered ? <button onClick={()=>{
-                this.props.dispatch(editEvents({Microskopia:false},this.state.type))
+            {this.props.event.Snapshot ? <button onClick={()=>{
+                this.props.dispatch(editEvents({Snapshot:false},this.state.type))
                 this.setState(()=>({hasRegistered:false}))
+                window.location.reload();
             }}>Unregister</button>:
             <button onClick={()=>{
-                this.props.dispatch(editEvents({Microskopia:true},this.state.type));
+                this.props.dispatch(editEvents({Snapshot:true},this.state.type));
                 this.setState(()=>({hasRegistered:true}))
+                window.location.reload();
             }}>Register !</button>
             }
             
@@ -35,4 +37,4 @@ const mapStateToProps=(state)=>{
     }
 }
 
-export default connect(mapStateToProps)(Microskopia);
+export default connect(mapStateToProps)(Snapshot);

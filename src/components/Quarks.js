@@ -15,12 +15,14 @@ class Quarks extends React.Component{
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.state.hasRegistered ? <button onClick={()=>{
+            {this.props.event.Quarks ? <button onClick={()=>{
                 this.props.dispatch(editEvents({Quarks:false},this.state.type))
+                window.location.reload();
                 this.setState(()=>({hasRegistered:false}))
             }}>Unregister</button>:
             <button onClick={()=>{
                 this.props.dispatch(editEvents({Quarks:true},this.state.type));
+                window.location.reload()
                 this.setState(()=>({hasRegistered:true}))
             }}>Register !</button>
             }
