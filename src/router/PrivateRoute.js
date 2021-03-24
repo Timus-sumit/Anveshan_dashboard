@@ -10,10 +10,6 @@ const PrivateRoute = ({isAuthenticated,component:Component,...rest})=>(
     <Route {...rest} component={(props)=>(
         isAuthenticated?(
             <div>
-                <Sidebar/>
-                <div className="main-content">
-                    <Component {...props}/>
-                </div>
                 <Sidebar />
                 <div className="main-content pl-5 pt-5 pr-5">
                    <Component {...props}/>
