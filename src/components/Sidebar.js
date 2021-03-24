@@ -61,14 +61,13 @@ class Sidebar extends React.Component {
             <span className="navbar-toggler-icon" />
           </button>
           {/* Brand */}
-            <NavbarBrand className="pt-0 text-center" >
+            <NavbarBrand className="pt-0 text-center brand" >
               <Link to="/dashboard"> 
               <img
-                className="navbar-brand-img"
-                src="/logo.jpg"
-                
+                src="/events/anveshan_logo.png"
+                height="100%"
+               
               />
-              <h1 className="text-white">Anveshan</h1>
               </Link> 
             </NavbarBrand>
           {/* User */}
@@ -99,13 +98,13 @@ class Sidebar extends React.Component {
             </UncontrolledDropdown>
           </Nav>
           {/* Collapse */}
-          <Collapse navbar isOpen={this.state.collapseOpen}>
+          <Collapse navbar className="collapse-bar" isOpen={this.state.collapseOpen}>
             {/* Collapse header */}
             <div className="navbar-collapse-header d-md-none">
-              <Row>
+              <Row >
                   <Col className="collapse-brand" xs="6">
                       <Link to='/dashboard'>
-                        <img  src='/logo.jpg' />
+                        <img className="collapse-img"  src='/logo.jpg' />
                       </Link>
                   </Col>
                 <Col className="collapse-close" xs="6">
@@ -133,7 +132,7 @@ class Sidebar extends React.Component {
                             />
                             </span>
                             <Media className="ml-2 d-none d-lg-block">
-                            <span className="mb-0 text-white font-weight-bold">
+                            <span className="mb-2 text-white font-weight-bold">
                                 {this.props.user.name}
                             </span>
                              </Media>
@@ -148,28 +147,21 @@ class Sidebar extends React.Component {
                     </UncontrolledDropdown>
                 </NavItem> 
                 <NavItem className="pl-4">
-                    <NavLink to="/dashboard" activeStyle={{
-                      fontWeight: "bold",
-                      color: "gray"
-                    }}>
-                        <h3 className="text-white" >Dashboard</h3>
+                    <NavLink to="/dashboard">
+                        <h3 className="text-white yt-style" >Dashboard</h3>
                     </NavLink>
                 </NavItem>
                 <NavItem className="pl-4">
                     <Link to="/events">
-                        <h3 className="text-white">Events</h3>
+                        <h3 className="text-white  yt-style">Events</h3>
                     </Link>
                 </NavItem>
                 <NavItem className="pl-4">
                     <Link to="/">
-                        <h3 className="text-white">Workshops</h3>
+                        <h3 className="text-white  yt-style">Workshops</h3>
                     </Link>
                 </NavItem>
-                <NavItem className="pl-4">
-                    <Button color="secondary" onClick={this.props.startLogout}>
-                      Logout
-                    </Button>
-                </NavItem>
+               
             </Nav>
             {/* Divider */}
             <hr className="my-3" />
