@@ -1,9 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { editEvents } from '../actions/event';
-import{
-    Container
-} from 'reactstrap';
 class Initio extends React.Component{
     constructor(props){
         super(props);
@@ -14,21 +11,23 @@ class Initio extends React.Component{
     }
    render(){
     return(
-        <Container fluid className="pt-5">
+        <div>
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.state.hasRegistered ? <button onClick={()=>{
+            {this.props.event.Initio ? <button onClick={()=>{
                 this.props.dispatch(editEvents({Initio:false},this.state.type))
                 this.setState(()=>({hasRegistered:false}))
+                window.location.reload();
             }}>Unregister</button>:
             <button onClick={()=>{
                 this.props.dispatch(editEvents({Initio:true},this.state.type));
                 this.setState(()=>({hasRegistered:true}))
+                window.location.reload();
             }}>Register !</button>
             }
             
-        </Container>
+        </div>
     )
 }
 }

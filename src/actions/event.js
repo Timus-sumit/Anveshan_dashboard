@@ -7,9 +7,9 @@ export const createEvents=()=>{
             CodeMet:false,
             Initio:false,
             Internado:false,
-            Microskopia:false,
+            Metcon:false,
             Quarks:false,
-            Quitation:false,
+            Snapshot:false,
             Rivista:false,};
         database.ref(`users/${user.uid}`).set({name:user.name,email:user.email,...events}).then((ref)=>{
             dispatch({
@@ -40,9 +40,9 @@ export const setEvents=()=>{
                 CodeMet:events.CodeMet,
                 Initio:events.Initio,
                 Internado:events.Internado,
-                Microskopia:events.Microskopia,
+                Metcon:events.Metcon,
                 Quarks:events.Quarks,
-                Quitation:events.Quitation,
+                Snapshot:events.Snapshot,
                 Rivista:events.Rivista,
             }
 

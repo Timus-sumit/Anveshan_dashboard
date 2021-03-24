@@ -3,9 +3,9 @@ const initialState = {
     CodeMet:false,
     Initio:false,
     Internado:false,
-    Microskopia:false,
+    Metcon:false,
     Quarks:false,
-    Quitation:false,
+    Snapshot:false,
     Rivista:false,
 }
 
@@ -35,20 +35,20 @@ const eventReducer = (state=initialState,action)=>{
                 ...state,
                 Internado:true
             }
-        case 'Microskopia':
+        case 'Metcon':
             return {
                 ...state,
-                Microskopia:true
+                Metcon:true
             }
         case 'Quarks':
             return {
                 ...state,
                 Quarks:true
             }
-        case 'Quitation':
+        case 'Snapshot':
             return {
                 ...state,
-                Quitation:true
+                Snapshot:true
             }
         case 'Rivista':
             return {

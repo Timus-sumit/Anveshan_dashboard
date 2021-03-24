@@ -1,5 +1,4 @@
 import * as firebase from 'firebase';
-
 var firebaseConfig = {
   apiKey: "AIzaSyBjwvWu9GBwv2BoLWT8HXgZBZC1Q_ekUaY",
   authDomain: "anveshan21-c51b2.firebaseapp.com",

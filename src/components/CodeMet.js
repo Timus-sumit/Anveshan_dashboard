@@ -1,34 +1,30 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { editEvents } from '../actions/event';
-import{
-    Container
-} from 'reactstrap';
 class CodeMet extends React.Component{
     constructor(props){
         super(props);
         this.state={
             type:'CodeMet',
-            hasRegistered :this.props.event.CodeMet
         }
     }
    render(){
     return(
-        <Container fluid className="pt-5">
+        <div>
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.state.hasRegistered ? <button onClick={()=>{
+            {this.props.event.CodeMet ? <button onClick={()=>{
                 this.props.dispatch(editEvents({CodeMet:false},this.state.type))
-                this.setState(()=>({hasRegistered:false}))
+                window.location.reload();
             }}>Unregister</button>:
             <button onClick={()=>{
                 this.props.dispatch(editEvents({CodeMet:true},this.state.type));
-                this.setState(()=>({hasRegistered:true}))
+                window.location.reload();
             }}>Register !</button>
             }
             
-        </Container>
+        </div>
     )
 }
 }

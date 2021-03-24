@@ -1,12 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { editEvents } from '../actions/event';
-class Rivista extends React.Component{
+class Snapshot extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            type:'Rivista',
-            hasRegistered :this.props.event.Rivista
+            type:'Snapshot',
+            hasRegistered :this.props.event.Snapshot
         }
     }
    render(){
@@ -15,13 +15,13 @@ class Rivista extends React.Component{
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
-            {this.props.event.Rivista ? <button onClick={()=>{
-                this.props.dispatch(editEvents({Rivista:false},this.state.type))
+            {this.props.event.Snapshot ? <button onClick={()=>{
+                this.props.dispatch(editEvents({Snapshot:false},this.state.type))
                 this.setState(()=>({hasRegistered:false}))
                 window.location.reload();
             }}>Unregister</button>:
             <button onClick={()=>{
-                this.props.dispatch(editEvents({Rivista:true},this.state.type));
+                this.props.dispatch(editEvents({Snapshot:true},this.state.type));
                 this.setState(()=>({hasRegistered:true}))
                 window.location.reload();
             }}>Register !</button>
@@ -37,4 +37,4 @@ const mapStateToProps=(state)=>{
     }
 }
 
-export default connect(mapStateToProps)(Rivista);
+export default connect(mapStateToProps)(Snapshot);
