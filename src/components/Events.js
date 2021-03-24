@@ -15,16 +15,9 @@ class Events extends React.Component{
     render(){
     return(
         <div>
-            <Card>
-                <Row>
-                    <Col sm="12" className="text-center">
-                        <h1>Events</h1>
-                        <br/>
-                        
-                    </Col>
-                </Row>
-            </Card>
-            <br/>
+            <h1>Events</h1>
+            
+            <hr/>
             <Card>
             <Row className="py-3">
             { <Col sm='12' md='4' className="text-center"><NavLink to="/Literatium" exact={true}><EventItem imgURL={'/events/8.png'} eventName={'Literatium'}/></NavLink></Col>}

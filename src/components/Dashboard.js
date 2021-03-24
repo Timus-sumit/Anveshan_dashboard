@@ -17,7 +17,14 @@ const Dashboard = (props)=>{
                
             }}   >Make Payment !</Button></p>
             <hr/>
-            <Card>
+            <Card >
+            <div className="card-header ">
+                <div className="align-items-center row">
+                    <div className="col text-center">
+                        <h2 className="mb-0">Your Events</h2>
+                    </div>
+                </div>
+            </div>
             <Row className="py-3">
             {props.event.Literatium && <Col sm='12' md='4' className="text-center"><NavLink to="/Literatium" exact={true}><EventItem imgURL={'/events/8.png'} eventName={'Literatium'}/></NavLink></Col>}
             {props.event.Internado&&<Col sm='12' md='4' className="text-center"><NavLink to="/Internado" exact={true}><EventItem imgURL={'/events/2.png'} eventName={'Internado'}/></NavLink></Col>}

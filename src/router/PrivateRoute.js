@@ -3,6 +3,7 @@ import {Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 import 'reactstrap';
 
 const PrivateRoute = ({isAuthenticated,component:Component,...rest})=>(
@@ -10,8 +11,9 @@ const PrivateRoute = ({isAuthenticated,component:Component,...rest})=>(
         isAuthenticated?(
             <div>
                 <Sidebar />
-                <div className="main-content pl-5 pt-5">
+                <div className="main-content pl-5 pt-5 pr-5">
                    <Component {...props}/>
+                   <Footer/>
                 </div> 
             </div>):(<Redirect to='/' />)
     )} />
