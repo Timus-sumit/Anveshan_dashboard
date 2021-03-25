@@ -24,7 +24,7 @@ class Quarks extends React.Component{
                 this.props.dispatch(editEvents({Quarks:true},this.state.type));
                 window.location.reload()
                 this.setState(()=>({hasRegistered:true}))
-            }}>Register !</button>
+            }}  disabled={!this.props.event.hasPayed}>Register !</button>
             }
             
         </div>

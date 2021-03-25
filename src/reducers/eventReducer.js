@@ -7,6 +7,7 @@ const initialState = {
     Quarks:false,
     Snapshot:false,
     Rivista:false,
+    hasPayed:true,
 }
 
 const eventReducer = (state=initialState,action)=>{

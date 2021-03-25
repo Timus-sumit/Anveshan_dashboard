@@ -7,21 +7,22 @@ import {Button,Row,Col,Card, CardImg, CardText, CardBody,
 import EventItem from './EventItem';
 
 const Dashboard = (props)=>{
-    console.log(props.event.Literatium)
+   
     return(
         <div>
             <h1>Dashboard</h1>
             <p>Welcome {props.user.name} !</p>
             <p><Button color="success" onClick={()=>{
                 props.dispatch(createEvents());
-               
-            }}   >Make Payment !</Button></p>
+               window.location.reload()
+            } } disabled={props.event.hasPayed}   >Make Payment !</Button></p>
             <hr/>
             <Card >
             <div className="card-header ">
                 <div className="align-items-center row">
                     <div className="col text-center">
                         <h2 className="mb-0">Your Events</h2>
+                        {!props.event.hasPayed && <p className="text-muted">Please pay the registration fees in order to register in different events!</p>}
                     </div>
                 </div>
             </div>

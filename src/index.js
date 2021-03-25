@@ -6,11 +6,14 @@ import AppRoute,{history}from './router/AppRoute';
 import configureStore from './store/store';
 import {firebase} from './firebase/firebase';
 import{login,logout} from './actions/auth';
+import database from './firebase/firebase';
+
 import "./assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./assets/scss/argon-dashboard-react.scss";
 import "./styles/styles.scss";
 import { setEvents } from './actions/event';
+// import { database } from 'firebase';
 
 const store = configureStore();
 
@@ -39,11 +42,18 @@ firebase.auth().onAuthStateChanged((user)=>{
       if(history.location.pathname==='/'){
         history.push('/dashboard')
       }
+     
+    
+    
     })
     // renderApp();
     // if(history.location.pathname==='/'){
     //   history.push('/dashboard')
     // }
+    //   database.ref(`users/PnzqDlekyPUUMZJULlD2qSFBIsg1`).once('value').then((snapshot)=>{
+    //     console.log(!!snapshot.val())
+
+    //   })
     
   }else{
     store.dispatch(logout());

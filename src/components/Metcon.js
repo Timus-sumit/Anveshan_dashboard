@@ -24,7 +24,7 @@ class Metcon extends React.Component{
                 this.props.dispatch(editEvents({Metcon:true},this.state.type));
                 this.setState(()=>({hasRegistered:true}))
                 window.location.reload();
-            }}>Register !</button>
+            }}  disabled={!this.props.event.hasPayed}>Register !</button>
             }
             
         </div>
