@@ -10,7 +10,8 @@ export const createEvents=()=>{
             Metcon:false,
             Quarks:false,
             Snapshot:false,
-            Rivista:false,};
+            Rivista:false,
+            hasPayed:true};
         database.ref(`users/${user.uid}`).set({name:user.name,email:user.email,...events}).then((ref)=>{
             dispatch({
                 type:'CREATE'
@@ -33,6 +34,7 @@ export const setEvents=()=>{
     return (dispatch,getState)=>{
         const user = getState().auth;
         return database.ref(`users/${user.uid}`).once('value').then((snapshot)=>{
+            if(!!snapshot.val()){
             const events = snapshot.val();
 
             const event = {
@@ -44,12 +46,24 @@ export const setEvents=()=>{
                 Quarks:events.Quarks,
                 Snapshot:events.Snapshot,
                 Rivista:events.Rivista,
+                hasPayed:events.hasPayed
             }
 
             dispatch({
                 type:'SET',
                 event
             })
+           }
+           else{
+               const event={
+                   hasPayed:false
+               }
+
+               dispatch({
+                   type:'SET',
+                   event
+               })
+           }
         })
     }
 }

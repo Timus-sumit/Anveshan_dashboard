@@ -14,6 +14,8 @@ class CodeMet extends React.Component{
             <div>
                 <p>Info, update and everything else about this Event</p>
             </div>
+
+            
             {this.props.event.CodeMet ? <button onClick={()=>{
                 this.props.dispatch(editEvents({CodeMet:false},this.state.type))
                 window.location.reload();
@@ -21,7 +23,7 @@ class CodeMet extends React.Component{
             <button onClick={()=>{
                 this.props.dispatch(editEvents({CodeMet:true},this.state.type));
                 window.location.reload();
-            }}>Register !</button>
+            }} disabled={!this.props.event.hasPayed}>Register !</button>
             }
             
         </div>
