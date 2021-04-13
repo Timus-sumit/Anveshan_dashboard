@@ -161,6 +161,12 @@ class Sidebar extends React.Component {
                         <h3 className="text-white  yt-style">Workshops</h3>
                     </Link>
                 </NavItem>
+                <NavItem className="pl-3  pt-1 bottom" style={{alignContent: "right"}}>
+                  <Button color="primary" onClick={this.props.startLogout}>
+                  <i className="ni ni-user-run"/>
+                  <span>Logout</span>
+                  </Button>
+                </NavItem>
                
             </Nav>
             {/* Divider */}
