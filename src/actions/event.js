@@ -11,7 +11,13 @@ export const createEvents=()=>{
             Quarks:false,
             Snapshot:false,
             Rivista:false,
-            hasPayed:true};
+            hasPayed:true,
+            address:"N/A",
+            city:"N/A",
+            country:"N/A",
+            postcode:"N/A",
+            phonenumber:"N/A",
+            merch:"N/A"};
         database.ref(`users/${user.uid}`).set({name:user.name,email:user.email,...events}).then((ref)=>{
             dispatch({
                 type:'CREATE'
@@ -46,7 +52,13 @@ export const setEvents=()=>{
                 Quarks:events.Quarks,
                 Snapshot:events.Snapshot,
                 Rivista:events.Rivista,
-                hasPayed:events.hasPayed
+                hasPayed:events.hasPayed,
+                address:events.address,
+                city:events.city,
+                country:events.country,
+                postcode:events.postcode,
+                phonenumber:events.phonenumber,
+                merch:events.merch
             }
 
             dispatch({
@@ -63,7 +75,13 @@ export const setEvents=()=>{
                 Quarks:false,
                 Snapshot:false,
                 Rivista:false,
-                hasPayed:false};
+                hasPayed:false,
+                address:"N/A",
+                city:"N/A",
+                country:"N/A",
+                postcode:"N/A",
+                phonenumber:"N/A",
+                merch:"N/A"};
             database.ref(`users/${user.uid}`).set({name:user.name,email:user.email,...events}).then((ref)=>{
                 dispatch({
                     type:'CREATE'

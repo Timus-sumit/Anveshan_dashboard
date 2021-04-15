@@ -85,10 +85,6 @@ class Sidebar extends React.Component {
                 <DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0">Welcome!</h6>
                 </DropdownItem>
-                <DropdownItem to="/admin/user-profile" tag={Link}>
-                  <i className="ni ni-single-02" />
-                  <span>My profile</span>
-                </DropdownItem>
                 <DropdownItem href="#pablo" onClick={this.props.startLogout}>
                   <i className="ni ni-user-run" />
                   <span>Logout</span>
@@ -145,20 +141,26 @@ class Sidebar extends React.Component {
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </NavItem> 
+                <br/>
                 <NavItem className="pl-4">
                     <NavLink to="/dashboard">
-                        <h3 className="text-white yt-style" >Dashboard</h3>
+                        <p className="text-white " >Dashboard</p>
                     </NavLink>
                 </NavItem>
                 <NavItem className="pl-4">
                     <Link to="/events">
-                        <h3 className="text-white  yt-style">Events</h3>
+                        <p  className="text-white  ">Events</p>
                     </Link>
                 </NavItem>
                 <NavItem className="pl-4">
                     <Link to="/">
-                        <h3 className="text-white  yt-style">Workshops</h3>
+                        <p  className="text-white  ">Workshops</p>
                     </Link>
+                </NavItem>
+                <NavItem className="pl-4">
+                    <NavLink to="/userprofile">
+                        <p  className="text-white " >User Profile</p>
+                    </NavLink>
                 </NavItem>
                
             </Nav>

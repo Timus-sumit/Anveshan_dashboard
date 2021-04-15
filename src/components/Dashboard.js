@@ -17,7 +17,7 @@ const Dashboard = (props)=>{
                window.location.reload()
             } } disabled={props.event.hasPayed}   >Make Payment !</Button></p>
             <hr/>
-            <Card >
+            <Card className="bg-secondary shadow" >
             <div className="card-header ">
                 <div className="align-items-center row">
                     <div className="col text-center">

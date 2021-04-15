@@ -18,7 +18,7 @@ class Events extends React.Component{
             <h1>Events</h1>
             
             <hr/>
-            <Card>
+            <Card className="bg-secondary shadow">
             <Row className="py-3">
             { <Col sm='12' md='4' className="text-center"><NavLink to="/Literatium" exact={true}><EventItem imgURL={'/events/8.png'} eventName={'Literatium'}/></NavLink></Col>}
             {<Col sm='12' md='4' className="text-center"><NavLink to="/Internado" exact={true}><EventItem imgURL={'/events/2.png'} eventName={'Internado'}/></NavLink></Col>}

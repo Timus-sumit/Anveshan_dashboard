@@ -15,6 +15,7 @@ import Snapshot from '../components/Snapshot';
 import Rivista from '../components/Rivista';
 import Quarks from '../components/Quarks';
 import Events from '../components/Events';
+import UserProfile from '../components/UserProfile';
 
 export const history = createHistory();
 
@@ -34,6 +35,7 @@ const AppRoute=()=>{
                     <PrivateRoute path="/Snapshot" component={Snapshot}/>
                     <PrivateRoute path="/Rivista" component={Rivista}/>
                     <PrivateRoute path="/Quarks" component={Quarks}/>
+                    <PrivateRoute path="/userprofile" component={UserProfile}/>
                 </Switch>
             </div>
         </Router>
