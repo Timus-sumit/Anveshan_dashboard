@@ -31,7 +31,7 @@ export const editEvents=(updates,type)=>{
     return (dispatch,getState)=>{
         const user = getState().auth;
         database.ref(`users/${user.uid}`).update({...updates}).then(()=>{
-            dispatch({type})
+            dispatch({type,updates})
         })
     }
 }
@@ -64,6 +64,10 @@ export const setEvents=()=>{
             dispatch({
                 type:'SET',
                 event
+            })
+            dispatch({
+                type:'USER_NAME',
+                name:events.name
             })
            }
            else{

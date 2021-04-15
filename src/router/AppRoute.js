@@ -16,6 +16,7 @@ import Rivista from '../components/Rivista';
 import Quarks from '../components/Quarks';
 import Events from '../components/Events';
 import UserProfile from '../components/UserProfile';
+import EditProfile from '../components/EditProfile';
 
 export const history = createHistory();
 
@@ -36,6 +37,7 @@ const AppRoute=()=>{
                     <PrivateRoute path="/Rivista" component={Rivista}/>
                     <PrivateRoute path="/Quarks" component={Quarks}/>
                     <PrivateRoute path="/userprofile" component={UserProfile}/>
+                    <PrivateRoute path="/editprofile" component={EditProfile}/>
                 </Switch>
             </div>
         </Router>

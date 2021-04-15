@@ -1,4 +1,5 @@
 import {firebase , googleAuthProvider} from '../firebase/firebase';
+import database from '../firebase/firebase';
 
 export const login = ({uid,name,email,pic})=>{
     return{
@@ -25,5 +26,14 @@ export const logout = ()=>{
 export const startLogout = ()=>{
     return ()=>{
         return firebase.auth().signOut();
+    }
+}
+
+export const editName=(name,type)=>{
+    return (dispatch,getState)=>{
+        const user = getState().auth;
+        database.ref(`users/${user.uid}`).update({name}).then(()=>{
+            dispatch({type,name})
+        })
     }
 }

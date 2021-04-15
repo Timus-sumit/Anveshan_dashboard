@@ -56,6 +56,11 @@ const eventReducer = (state=initialState,action)=>{
                 ...state,
                 Rivista:true
             }
+        case 'USER' :
+            return{
+                ...state,
+                ...action.updates
+            }
         default :
             return state;
             
