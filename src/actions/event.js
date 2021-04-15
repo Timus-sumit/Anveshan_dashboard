@@ -55,14 +55,20 @@ export const setEvents=()=>{
             })
            }
            else{
-               const event={
-                   hasPayed:false
-               }
-
-               dispatch({
-                   type:'SET',
-                   event
-               })
+            const events = { Literatium:false,
+                CodeMet:false,
+                Initio:false,
+                Internado:false,
+                Metcon:false,
+                Quarks:false,
+                Snapshot:false,
+                Rivista:false,
+                hasPayed:false};
+            database.ref(`users/${user.uid}`).set({name:user.name,email:user.email,...events}).then((ref)=>{
+                dispatch({
+                    type:'CREATE'
+                })
+            })
            }
         })
     }
