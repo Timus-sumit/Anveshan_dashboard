@@ -46,7 +46,7 @@ class Initio extends React.Component{
                 <br/>
                 <br/>
 
-                {this.props.event.Initio ? <p>You have registered for this event !</p> : <p>Click the Button to register in this event.</p>}
+                {this.props.event.Initio ? <p>You have registered to this event !</p> : <p>Click the Button to register in this event.</p>}
                 
                 {this.props.event.Initio ? <Button onClick={()=>{
                     this.props.dispatch(editEvents({Initio:false},this.state.type))
@@ -61,9 +61,7 @@ class Initio extends React.Component{
                 }
                 
                 </CardBody>
-            </Card>
-           
-            
+            </Card>  
         </div>
     )
 }
