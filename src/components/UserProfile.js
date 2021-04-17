@@ -134,13 +134,13 @@ class UserProfile extends React.Component{
                                                         className="form-control-label"
                                                         htmlFor="input-country"
                                                     >
-                                                        Country
+                                                        State
                                                     </label>
                                                     <Input
                                                         className="form-control-alternative"
                                                         defaultValue={this.props.event.country}
                                                         id="input-country"
-                                                        placeholder="Country"
+                                                        placeholder="State"
                                                         type="text"
                                                         disabled
                                                     />
