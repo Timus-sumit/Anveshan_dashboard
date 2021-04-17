@@ -7,3 +7,18 @@ Link:active{
     color: gray;
 }
 
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+
+.loader__image{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+

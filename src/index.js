@@ -7,6 +7,7 @@ import configureStore from './store/store';
 import {firebase} from './firebase/firebase';
 import{login,logout} from './actions/auth';
 import database from './firebase/firebase';
+import LoadingPage from './components/LoadingPage';
 
 import "./assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -31,7 +32,7 @@ const renderApp = ()=>{
   }
 }
 
-ReactDOM.render(<p>Loading...</p>,document.getElementById('root'));
+ReactDOM.render(<LoadingPage/>,document.getElementById('root'));
 
 
 firebase.auth().onAuthStateChanged((user)=>{
