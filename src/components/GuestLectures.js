@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { createEvents } from '../actions/event';
-import { Button, Card, CardBody, Row, Col, Container } from 'reactstrap';
+import { Button, Card,CardImg, CardBody, Row, Col, Container } from 'reactstrap';
 import EventItem from './EventItem';
 
 class Events extends React.Component {
@@ -15,12 +15,11 @@ class Events extends React.Component {
   render() {
     return (
       <div>
-        <h1>Events</h1>
-
-        <hr />
-        <Container fluid>
-          <h1>Coming Soon</h1>
-        </Container>
+      <div>
+          <Card className="bg-secondary shadow">
+              <CardImg top width="100%" src="/coming-soon.jpg" alt="Card image cap" />
+          </Card>
+      </div>
       </div>
     );
   }

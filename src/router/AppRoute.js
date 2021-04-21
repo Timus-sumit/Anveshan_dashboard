@@ -18,6 +18,7 @@ import Events from '../components/Events';
 import UserProfile from '../components/UserProfile';
 import EditProfile from '../components/EditProfile';
 import Guestlectures from '../components/GuestLectures';
+import Workshop from '../components/Workshop';
 
 export const history = createHistory();
 
@@ -38,7 +39,7 @@ const AppRoute = () => {
           <PrivateRoute path='/Rivista' component={Rivista} />
           <PrivateRoute path='/Quarks' component={Quarks} />
           <PrivateRoute path='/guestlectures' component={Guestlectures} />
-
+          <PrivateRoute path ='/workshop' component={Workshop}/>
           <PrivateRoute path='/userprofile' component={UserProfile} />
           <PrivateRoute path='/editprofile' component={EditProfile} />
         </Switch>
