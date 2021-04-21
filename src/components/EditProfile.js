@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {NavLink} from 'react-router-dom';
 
 import {
     Card,
@@ -149,6 +150,11 @@ class EditProfile extends React.Component{
                                 <Row className="align-items-center">
                                     <Col xs="8">
                                         <h3 className="mb-0">My account</h3>
+                                    </Col>
+                                    <Col className="text-right" xs="4" >
+                                        <NavLink to="/userprofile">
+                                            Back
+                                        </NavLink>
                                     </Col>
                                 </Row>
                                 
@@ -320,23 +326,25 @@ class EditProfile extends React.Component{
                                     </div>
                                     <hr className="my-4"/>
                                     {/* Description */}
-                                    <h6 className="heading-small text-muted mb-4">Merch  </h6>
-                                    <div className="pl-lg-4">
-                                        <form onSubmit={this.onSubmit}>
-                                            <label>Colour</label>
-                                            <Input
-                                                className="form-control-alternative"
-                                                placeholder="A few words about you ..."
-                                                rows="4"
-                                                value={this.state.merch}
-                                                type="text"
-                                                onChange={this.onMerchChange}
+                                    {
+                                    // <h6 className="heading-small text-muted mb-4">Merch  </h6>
+                                    // <div className="pl-lg-4">
+                                    //     <form onSubmit={this.onSubmit}>
+                                    //         <label>Colour</label>
+                                    //         <Input
+                                    //             className="form-control-alternative"
+                                    //             placeholder="A few words about you ..."
+                                    //             rows="4"
+                                    //             value={this.state.merch}
+                                    //             type="text"
+                                    //             onChange={this.onMerchChange}
                                                 
-                                            />
-                                            <br/>
-                                            <button className="btn btn-primary">Save</button>
-                                        </form>
-                                    </div>
+                                    //         />
+                                    //         <br/>
+                                    //         <button className="btn btn-primary">Save</button>
+                                    //     </form>
+                                    // </div>
+                                    }
                                 
                             </CardBody>
                         </Card>

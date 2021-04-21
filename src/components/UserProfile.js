@@ -186,20 +186,22 @@ class UserProfile extends React.Component{
                                     </div>
                                     <hr className="my-4"/>
                                     {/* Description */}
-                                    <h6 className="heading-small text-muted mb-4">Merch  </h6>
-                                    <div className="pl-lg-4">
-                                        <FormGroup>
-                                            <label>Colour</label>
-                                            <Input
-                                                className="form-control-alternative"
-                                                placeholder="A few words about you ..."
-                                                rows="4"
-                                                defaultValue={this.props.event.merch}
-                                                type="text"
-                                                disabled
-                                            />
-                                        </FormGroup>
-                                    </div>
+                                    {
+                                //     <h6 className="heading-small text-muted mb-4">Merch  </h6>
+                                //    <div className="pl-lg-4">
+                                //         <FormGroup>
+                                //             <label>Colour</label>
+                                //             <Input
+                                //                 className="form-control-alternative"
+                                //                 placeholder="A few words about you ..."
+                                //                 rows="4"
+                                //                 defaultValue={this.props.event.merch}
+                                //                 type="text"
+                                //                 disabled
+                                //             />
+                                //         </FormGroup>
+                                //     </div>
+                                }
                                 </Form>
                             </CardBody>
                         </Card>

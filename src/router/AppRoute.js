@@ -17,6 +17,8 @@ import Quarks from '../components/Quarks';
 import Events from '../components/Events';
 import UserProfile from '../components/UserProfile';
 import EditProfile from '../components/EditProfile';
+import Workshop from '../components/Workshop';
+import Guestlec from '../components/Guestlec';
 
 export const history = createHistory();
 
@@ -26,6 +28,8 @@ const AppRoute=()=>{
             <div>
                 <Switch>
                     <PublicRoute path="/" component={LoginPage} exact={true}/>
+                    <PrivateRoute path="/guestlec" component={Guestlec} />
+                    <PrivateRoute path="/workshop" component={Workshop}/>
                     <PrivateRoute path="/dashboard" component={Dashboard}/>
                     <PrivateRoute path="/events" component={Events}/>
                     <PrivateRoute path="/Literatium" component={Literatium}/>
