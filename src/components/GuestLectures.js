@@ -14,13 +14,71 @@ class Events extends React.Component {
   }
   render() {
     return (
-      <div>
-      <div>
-          <Card className="bg-secondary shadow">
-              <CardImg top width="100%" src="/coming-soon.jpg" alt="Card image cap" />
-          </Card>
-      </div>
-      </div>
+        <section id="team" className="team section-bg">
+          <div className="container" data-aos="fade-up">
+            <div className="section-title">
+              <h2>Guest Lectures</h2>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div className="row">
+              <div className="col-lg-6 mb-4">
+                <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                  <div className="pic"><img src="/guests/Baldev Raj.jpeg" className="img-fluid" alt=""/></div>
+                  <div className="member-info">
+                    <h4>Dr. Baldev Raj</h4>
+                    <span>NIAS, IISC Banglore</span>
+                    <p>Lecture on 25/06/21 at 3PM </p>
+                    <div className="mt-4">
+                      <a href="">Attend Lecture</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-6 mb-4">
+                <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                  <div className="pic"><img src="/guests/Baldev Raj.jpeg" className="img-fluid" alt=""/></div>
+                  <div className="member-info">
+                    <h4>Dr. Baldev Raj</h4>
+                    <span>NIAS, IISC Banglore</span>
+                    <p>Lecture on 25/06/21 at 3PM </p>
+                    <div className="mt-4">
+                      <a href="">Attend Lecture</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-6 mb-4">
+                <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                  <div className="pic"><img src="/guests/Baldev Raj.jpeg" className="img-fluid" alt=""/></div>
+                  <div className="member-info">
+                    <h4>Dr. Baldev Raj</h4>
+                    <span>NIAS, IISC Banglore</span>
+                    <p>Lecture on 25/06/21 at 3PM </p>
+                    <div className="mt-4">
+                      <a href="">Attend Lecture</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-6 mb-4">
+                <div className="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                  <div className="pic"><img src="/guests/Baldev Raj.jpeg" className="img-fluid" alt=""/></div>
+                  <div className="member-info">
+                    <h4>Dr. Baldev Raj</h4>
+                    <span>NIAS, IISC Banglore</span>
+                    <p>Lecture on 25/06/21 at 3PM </p>
+                    <div className="mt-4">
+                      <a href="">Attend Lecture</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     );
   }
 }
