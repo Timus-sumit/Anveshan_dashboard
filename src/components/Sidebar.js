@@ -162,6 +162,11 @@ class Sidebar extends React.Component {
                   <p className='text-white '>User Profile</p>
                 </NavLink>
               </NavItem>
+              <NavItem className='pl-4'>
+                <button className="btn btn-dark" onClick={this.props.startLogout}>
+                  Logout
+                </button>
+              </NavItem>
             </Nav>
             {/* Divider */}
             <hr className='my-3' />
