@@ -1,19 +1,19 @@
-import React from 'react';
-import {Route, Redirect} from 'react-router-dom';
-import {connect} from 'react-redux';
+import React from 'react'
+import { Route, Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-
-const PublicRoute = ({isAuthenticated,component:Component,...rest})=>(
-    <Route {...rest} component={(props)=>(
-        isAuthenticated?(
-            <Redirect to ='/dashboard' />
-            ):(<Component {...props}/>)
-    )} />
-)
-const mapStateToProps = (state)=>{
-    return{
-        isAuthenticated : !! state.auth.uid
+const PublicRoute = ({ isAuthenticated, component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    component={(props) =>
+      isAuthenticated ? <Redirect to="/dashboard" /> : <Component {...props} />
     }
+  />
+)
+const mapStateToProps = (state) => {
+  return {
+    isAuthenticated: !!state.auth.uid,
+  }
 }
 
-export default connect(mapStateToProps)(PublicRoute);
+export default connect(mapStateToProps)(PublicRoute)

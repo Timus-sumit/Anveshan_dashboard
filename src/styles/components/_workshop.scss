@@ -1,0 +1,76 @@
+.why-us .container {
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+    background: #fff;
+  }
+  
+  .why-us .icon-box + .icon-box {
+    margin-top: 50px;
+  }
+  
+  .why-us .icon-box .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background: #f3f8fa;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  
+  .why-us .icon-box .icon i {
+    color: #68A4C4;
+    font-size: 32px;
+  }
+  
+  .why-us .icon-box:hover .icon {
+    background: #68A4C4;
+  }
+  
+  .why-us .icon-box:hover .icon i {
+    color: #fff;
+  }
+  
+  .why-us .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .why-us .icon-box .affiliation {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  .why-us .icon-box .title a {
+    color: #343a40;
+    transition: 0.3s;
+  }
+  
+  .why-us .icon-box .title a:hover {
+    color: #68A4C4;
+  }
+  
+  .why-us .icon-box .description {
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 15px;
+  }
+  .why-us .icon-box .description span {
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 15px;
+  }
+  
+  .why-us .video-box {
+    position: relative;
+  }
+  
+  .why-us .video-box img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
