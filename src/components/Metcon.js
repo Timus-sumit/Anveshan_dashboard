@@ -15,7 +15,7 @@ class Metcon extends React.Component{
         <div>
 
         <Card className="bg-secondary shadow">
-        <CardImg top width="100%" src="/events/4A-01.png" alt="Card image cap" />
+        <CardImg top width="100%" src="/events/METCON.png" alt="Card image cap" />
         <CardHeader className="bg-white border-0">
                         <Row className="align-items-center">
                             <Col xs="12" >

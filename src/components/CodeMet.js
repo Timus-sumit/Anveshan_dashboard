@@ -13,7 +13,7 @@ class CodeMet extends React.Component{
     return(
         <div>
         <Card className="bg-secondary shadow">
-            <CardImg top width="100%" src="/events/8A-01.png" alt="Card image cap" />
+            <CardImg top width="100%" src="/events/CODEMET.png" alt="Card image cap" />
             <CardHeader className="bg-white border-0">
                             <Row className="align-items-center">
                                 <Col xs="12" >
