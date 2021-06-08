@@ -19,6 +19,9 @@ export const createEvents = () => {
       postcode: 'N/A',
       phonenumber: 'N/A',
       merch: 'N/A',
+      college: 'N/A',
+      branch: 'N/A',
+      specs: 'N/A',
     }
     database
       .ref(`users/${user.uid}`)
@@ -69,8 +72,10 @@ export const setEvents = () => {
             postcode: events.postcode,
             phonenumber: events.phonenumber,
             merch: events.merch,
+            college: events.college,
+            branch: events.branch,
+            specs: events.specs,
           }
-
           dispatch({
             type: 'SET',
             event,
@@ -96,6 +101,9 @@ export const setEvents = () => {
             postcode: 'N/A',
             phonenumber: 'N/A',
             merch: 'N/A',
+            college: 'N/A',
+            branch: 'N/A',
+            specs: 'N/A',
           }
           database
             .ref(`users/${user.uid}`)

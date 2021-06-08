@@ -26,6 +26,9 @@ class EditProfile extends React.Component {
       postcode: this.props.event.postcode,
       phonenumber: this.props.event.phonenumber,
       merch: this.props.event.merch,
+      college: this.props.event.college,
+      branch: this.props.event.branch,
+      specs: this.props.event.specs,
       error: '',
     }
   }
@@ -34,6 +37,30 @@ class EditProfile extends React.Component {
     this.setState(() => {
       return {
         name,
+      }
+    })
+  }
+  onCollegeChange = (e) => {
+    const college = e.target.value
+    this.setState(() => {
+      return {
+        college,
+      }
+    })
+  }
+  onBranchChange = (e) => {
+    const branch = e.target.value
+    this.setState(() => {
+      return {
+        branch,
+      }
+    })
+  }
+  onSpecsChange = (e) => {
+    const specs = e.target.value
+    this.setState(() => {
+      return {
+        specs,
       }
     })
   }
@@ -94,7 +121,10 @@ class EditProfile extends React.Component {
       !this.state.country ||
       !this.state.phonenumber ||
       !this.state.postcode ||
-      !this.state.merch
+      !this.state.merch ||
+      !this.state.college ||
+      !this.state.branch ||
+      !this.state.specs
     ) {
       this.setState(() => {
         return {
@@ -117,6 +147,9 @@ class EditProfile extends React.Component {
         postcode: this.state.postcode,
         phonenumber: this.state.phonenumber,
         merch: this.state.merch,
+        college: this.state.college,
+        branch: this.state.branch,
+        specs: this.state.specs,
       }
 
       this.props.dispatch(editEvents(user, 'USER'))
@@ -133,7 +166,10 @@ class EditProfile extends React.Component {
       !this.state.country ||
       !this.state.phonenumber ||
       !this.state.postcode ||
-      !this.state.merch
+      !this.state.merch ||
+      !this.state.college ||
+      !this.state.branch ||
+      !this.state.specs
     ) {
       this.setState(() => {
         return {
@@ -209,6 +245,60 @@ class EditProfile extends React.Component {
                         type="email"
                         placeholder="Email"
                         disabled
+                      />
+                    </FormGroup>
+                  </Col>
+                  <Col lg="6">
+                    <FormGroup>
+                      <label
+                        className="form-control-label"
+                        htmlFor="input-username"
+                      >
+                        College
+                      </label>
+                      <Input
+                        className="form-control-alternative"
+                        Value={this.props.event.college}
+                        id="input-username"
+                        placeholder="College"
+                        type="text"
+                        onChange={this.onCollegeChange}
+                      />
+                    </FormGroup>
+                  </Col>
+                  <Col lg="6">
+                    <FormGroup>
+                      <label
+                        className="form-control-label"
+                        htmlFor="input-username"
+                      >
+                        Course Pursuing
+                      </label>
+                      <Input
+                        className="form-control-alternative"
+                        Value={this.props.event.branch}
+                        id="input-username"
+                        placeholder="Branch"
+                        type="text"
+                        onChange={this.onBranchChange}
+                      />
+                    </FormGroup>
+                  </Col>
+                  <Col lg="6">
+                    <FormGroup>
+                      <label
+                        className="form-control-label"
+                        htmlFor="input-username"
+                      >
+                        Course Specialization
+                      </label>
+                      <Input
+                        className="form-control-alternative"
+                        Value={this.props.event.specs}
+                        id="input-username"
+                        placeholder="Specialization"
+                        type="text"
+                        onChange={this.onSpecsChange}
                       />
                     </FormGroup>
                   </Col>

@@ -78,6 +78,60 @@ class UserProfile extends React.Component {
                       />
                     </FormGroup>
                   </Col>
+                  <Col lg="6">
+                    <FormGroup>
+                      <label
+                        className="form-control-label"
+                        htmlFor="input-username"
+                      >
+                        College
+                      </label>
+                      <Input
+                        className="form-control-alternative"
+                        Value={this.props.event.college}
+                        id="input-username"
+                        placeholder="Username"
+                        type="text"
+                        disabled
+                      />
+                    </FormGroup>
+                  </Col>
+                  <Col lg="6">
+                    <FormGroup>
+                      <label
+                        className="form-control-label"
+                        htmlFor="input-username"
+                      >
+                        Course Pursuing
+                      </label>
+                      <Input
+                        className="form-control-alternative"
+                        Value={this.props.event.branch}
+                        id="input-username"
+                        placeholder="Username"
+                        type="text"
+                        disabled
+                      />
+                    </FormGroup>
+                  </Col>
+                  <Col lg="6">
+                    <FormGroup>
+                      <label
+                        className="form-control-label"
+                        htmlFor="input-username"
+                      >
+                        Course Specialization
+                      </label>
+                      <Input
+                        className="form-control-alternative"
+                        Value={this.props.event.specs}
+                        id="input-username"
+                        placeholder="Username"
+                        type="text"
+                        disabled
+                      />
+                    </FormGroup>
+                  </Col>
                 </Row>
               </div>
               <hr className="my-4" />
