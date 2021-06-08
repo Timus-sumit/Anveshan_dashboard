@@ -28,7 +28,7 @@ class Metcon extends React.Component {
           <CardImg
             top
             width="100%"
-            src="/events/4A-01.png"
+            src="/events/METCON.png"
             alt="Card image cap"
           />
           <CardHeader className="bg-white border-0">

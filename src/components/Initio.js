@@ -28,7 +28,7 @@ class Initio extends React.Component {
           <CardImg
             top
             width="100%"
-            src="/events/6A-01.png"
+            src="/events/INITIO.png"
             alt="Card image cap"
           />
           <CardHeader className="bg-white border-0">

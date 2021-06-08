@@ -28,7 +28,7 @@ class Literatium extends React.Component {
           <CardImg
             top
             width="100%"
-            src="/events/1A-01.png"
+            src="/events/LITERATIUM.png"
             alt="Card image cap"
           />
           <CardHeader className="bg-white border-0">

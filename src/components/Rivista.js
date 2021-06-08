@@ -29,7 +29,7 @@ class Rivista extends React.Component {
           <CardImg
             top
             width="100%"
-            src="/events/3A-01.png"
+            src="/events/RIVISTA.png"
             alt="Card image cap"
           />
           <CardHeader className="bg-white border-0">
