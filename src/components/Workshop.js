@@ -15,7 +15,7 @@ class Workshop extends React.Component {
         <div class="container mb-4">
           <div class="row">
             <div class="col-lg-6 video-box">
-              <img src="/workshop/Abhishek.jpg" class="img-fluid" alt="" />
+              <img src="/workshop/5.png" class="img-fluid" alt="" />
             </div>
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -29,12 +29,13 @@ class Workshop extends React.Component {
                   materials science using python
                   <br />
                   <br />
-                  <span>Program Highlights:</span> Induce a notion of the
-                  Potential of Machine Learning,
-                  <br />
-                  How ML can be Benificial to Metallurgical & Material Science
-                  Community
-                  <br />
+                  <span>Program Highlights:</span>
+                  <ul>
+                  <li>Induce a notion of the
+                  Potential of Machine Learning</li>
+                  <li>How ML can be Benificial to Metallurgical & Material Science
+                  Community</li>
+                  </ul>
                   <br />
                   <span>Date | Time | Platform:</span>
                   <br />
@@ -51,7 +52,7 @@ class Workshop extends React.Component {
         <div class="container mb-4">
           <div class="row">
             <div class="col-lg-6 video-box">
-              <img src="/workshop/Dharmveer.jpg" class="img-fluid" alt="" />
+              <img src="/workshop/6.png" class="img-fluid" alt="" />
             </div>
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -66,14 +67,13 @@ class Workshop extends React.Component {
                   contaminant removal
                   <br />
                   <br />
-                  <span>Program Highlights:</span> Sources of organic
-                  pollutants,
-                  <br />
-                  Impact of Pollutants on Humans & Environment,
-                  <br />
-                  Need For removal of Pollutants, <br />
-                  Method for Removal of Organic Pollutants
-                  <br />
+                  <span>Program Highlights:</span>
+                  <ul>
+                    <li>Sources of organic pollutants</li>
+                    <li>Impact of Pollutants on Humans & Environment</li>
+                    <li> Need For removal of Pollutants</li>
+                    <li> Method for Removal of Organic Pollutants</li>
+                  </ul>
                   <br />
                   <span>Date | Time | Platform:</span>
                   <br />
@@ -90,7 +90,7 @@ class Workshop extends React.Component {
         <div class="container mb-4">
           <div class="row">
             <div class="col-lg-6 video-box">
-              <img src="/workshop/Sweta.jpg" class="img-fluid" alt="" />
+              <img src="/workshop/7.png" class="img-fluid" alt="" />
             </div>
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -105,15 +105,15 @@ class Workshop extends React.Component {
                   of Photonic Devices
                   <br />
                   <br />
-                  <span>Program Highlights:</span> Significance of photonic
-                  devices,
-                  <br />
-                  Existing techniques for fabricating photonic
-                  micro/nanostructures,
-                  <br />
-                  Two-photon lithography and its advantagess, <br />
-                  Modeling of a photonic micro/nanostructure using COMSOL
-                  <br />
+                  <span>Program Highlights:</span>
+                  <ul>
+                    <li>Significance of photonic
+                    devices</li>
+                    <li>Existing techniques for fabricating photonic
+                    micro/nanostructures</li>
+                    <li> Two-photon lithography and its advantagess </li>
+                    <li> Modeling of a photonic micro/nanostructure using COMSOL</li>
+                  </ul>
                   <br />
                   <span>Date | Time | Platform:</span>
                   <br />

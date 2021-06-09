@@ -90,7 +90,7 @@ class UserProfile extends React.Component {
                         className="form-control-alternative"
                         Value={this.props.event.college}
                         id="input-username"
-                        placeholder="Username"
+                        placeholder="College"
                         type="text"
                         disabled
                       />
@@ -108,7 +108,7 @@ class UserProfile extends React.Component {
                         className="form-control-alternative"
                         Value={this.props.event.branch}
                         id="input-username"
-                        placeholder="Username"
+                        placeholder="Branch"
                         type="text"
                         disabled
                       />
@@ -126,7 +126,7 @@ class UserProfile extends React.Component {
                         className="form-control-alternative"
                         Value={this.props.event.specs}
                         id="input-username"
-                        placeholder="Username"
+                        placeholder="Specialization"
                         type="text"
                         disabled
                       />
