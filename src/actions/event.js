@@ -85,6 +85,14 @@ export const setEvents = () => {
             name: events.name,
           })
         } else {
+          let mail = user.email;
+          const pos = mail.search('@');
+          const suffix = mail.substr(pos+1);
+          console.log(suffix);
+          let payed = false
+          if(suffix==='itbhu.ac.in' || suffix==='iitbhu.ac.in'){
+            payed = true
+          }
           const events = {
             Literatium: false,
             CodeMet: false,
@@ -94,7 +102,7 @@ export const setEvents = () => {
             Quarks: false,
             Snapshot: false,
             Rivista: false,
-            hasPayed: false,
+            hasPayed: payed,
             address: 'N/A',
             city: 'N/A',
             country: 'N/A',
