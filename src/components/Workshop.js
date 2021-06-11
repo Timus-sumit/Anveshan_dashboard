@@ -19,14 +19,15 @@ class Workshop extends React.Component {
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <div class="icon-box">
+                <h4 class="title">Application of machine learning in
+                materials science using python</h4>
+                <br/>
+                <br/>
                 <h4 class="title">Abhishek Kumar Thakur</h4>
                 <h2 className="affiliation">
                   Ph.D., The University of Arizona, United States
                 </h2>
                 <p class="description">
-                  <span>Topic:</span> Application of machine learning in
-                  materials science using python
-                  <br />
                   <br />
                   <span>Program Highlights:</span>
                   <ul>
@@ -34,7 +35,7 @@ class Workshop extends React.Component {
                       Induce a notion of the Potential of Machine Learning
                     </li>
                     <li>
-                      How ML can be Benificial to Metallurgical & Material
+                      How ML can be Beneficial to Metallurgical & Material
                       Science Community
                     </li>
                   </ul>
@@ -59,15 +60,16 @@ class Workshop extends React.Component {
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <div class="icon-box">
+                <h4 className="title">Carbon composite materials for organic
+                contaminant removal</h4>
+                <br/>
+                <br/>
                 <h4 class="title">Dharmveer Yadav</h4>
                 <h2 className="affiliation">
                   Centre for Research in Nanotechnology and Science, India
                   Institute of Technology Bombay, Mumbai, India
                 </h2>
                 <p class="description">
-                  <span>Topic:</span> Carbon composit materials for organic
-                  contaminant removal
-                  <br />
                   <br />
                   <span>Program Highlights:</span>
                   <ul>
@@ -97,15 +99,16 @@ class Workshop extends React.Component {
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <div class="icon-box">
+                <h4 className="title"> Introduction to Fabrication and Modeling
+                of Photonic Devices</h4>
+                <br/>
+                <br/>
                 <h4 class="title">Sweta Rani</h4>
                 <h2 className="affiliation">
                   Research Scholar at IITB-Monash Research Academy, Indian
                   Institute of Technology Bombay, Mumbai, India
                 </h2>
                 <p class="description">
-                  <span>Topic:</span> Introduction to Fabrication and Modeling
-                  of Photonic Devices
-                  <br />
                   <br />
                   <span>Program Highlights:</span>
                   <ul>
@@ -114,7 +117,7 @@ class Workshop extends React.Component {
                       Existing techniques for fabricating photonic
                       micro/nanostructures
                     </li>
-                    <li> Two-photon lithography and its advantagess </li>
+                    <li> Two-photon lithography and its advantages</li>
                     <li>
                       {' '}
                       Modeling of a photonic micro/nanostructure using COMSOL
