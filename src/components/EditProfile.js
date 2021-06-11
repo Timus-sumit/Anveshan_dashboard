@@ -272,7 +272,7 @@ class EditProfile extends React.Component {
                         className="form-control-label"
                         htmlFor="input-username"
                       >
-                        Course Pursuing
+                        Course/Branch
                       </label>
                       <Input
                         className="form-control-alternative"
@@ -290,7 +290,7 @@ class EditProfile extends React.Component {
                         className="form-control-label"
                         htmlFor="input-username"
                       >
-                        Course Specialization
+                        Year of Study
                       </label>
                       <Input
                         className="form-control-alternative"

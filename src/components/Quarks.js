@@ -58,28 +58,24 @@ class Quarks extends React.Component {
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
               <li className="eventext">
-                The quiz will be conducted online in two rounds: Preliminary and
-                final round.
+                The quiz will be conducted online in two rounds: Forged in Fire
+                and Conquer the quark.
+              </li>
+              <li className="eventext">This will be an individual event. </li>
+              <li className="eventext">
+                The 1st round will consist of 20 single correct type questions
+                with 14 min time.{' '}
               </li>
               <li className="eventext">
-                A maximum of two participants per team are allowed.{' '}
+                The top 40% of participants will qualify for the final round.{' '}
               </li>
               <li className="eventext">
-                The prelims consists of 20 general questions.{' '}
+                Details of the final rounds will be informed to selected
+                candidates.{' '}
               </li>
               <li className="eventext">
-                Top 6 teams will qualify for the final round.{' '}
-              </li>
-              <li className="eventext">
-                There will be four rounds in the finals.{' '}
-              </li>
-              <li className="eventext">
-                Quizmaster will elaborate on the minutes of every round during
-                the quiz event.{' '}
-              </li>
-              <li className="eventext">
-                {' '}
-                Decision made by the quizmaster will be final.{' '}
+                Participants will be required to turn on their webcam during
+                round 2.{' '}
               </li>
             </ul>
 

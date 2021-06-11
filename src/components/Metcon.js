@@ -60,7 +60,7 @@ class Metcon extends React.Component {
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
               <li className="eventtext">
-                First round is the abstract submission round. The agenda of the
+                First-round is the abstract submission round. The agenda of the
                 conference will be rolled out soon. Participants are required to
                 submit an abstract depicting the world scenario of the agenda on
                 or before the notified date.

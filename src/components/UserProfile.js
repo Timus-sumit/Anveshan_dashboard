@@ -3,23 +3,17 @@ import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
 import {
-  Button,
   Card,
   CardHeader,
   CardBody,
   FormGroup,
   Form,
   Input,
-  Container,
   Row,
   Col,
 } from 'reactstrap'
 
 class UserProfile extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div>
@@ -102,7 +96,7 @@ class UserProfile extends React.Component {
                         className="form-control-label"
                         htmlFor="input-username"
                       >
-                        Course Pursuing
+                        Course/Branch
                       </label>
                       <Input
                         className="form-control-alternative"
@@ -120,7 +114,7 @@ class UserProfile extends React.Component {
                         className="form-control-label"
                         htmlFor="input-username"
                       >
-                        Course Specialization
+                        Year of Study
                       </label>
                       <Input
                         className="form-control-alternative"

@@ -5,8 +5,6 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText,
-  CardSubtitle,
   Button,
   CardImg,
   CardHeader,
@@ -52,28 +50,81 @@ class Snapshot extends React.Component {
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
               <li className="eventtext">
-                All materials-related snapshots with a justifying tagline will
-                be considered.
+                This edition of snapshot will have the following three themes:
+                Fractura, Rusty treasure, Weld the icon.
               </li>
               <li className="eventtext">
-                These snapshots have to be mailed at the official mail id of
-                Anveshan’21.
+                Participants shall choose one of the three themes.
               </li>
               <li className="eventtext">
-                The commencement of the event will be notified on the official
-                website of Anveshan’21.
+                In each theme, three subcategories are there: Title( less than 5
+                words), The Snap, Short story behind the snap (40-50 words).
               </li>
               <li className="eventtext">
-                All the eye-catching snapshots will be posted on the official
-                Facebook page of Anveshan’21 daily.
-              </li>
-              <li className="eventtext">
-                The winner among these best snapshots will be declared on the
-                final day of the fest.
+                The participant should submit, title, snap, and the story behind
+                the snap through form link provided in the Events section of the
+                Dashboard portal.
               </li>
             </ul>
-
             <br />
+            <CardTitle tag="h1">Description of themes</CardTitle>
+            <p className="eventtext">Fractura----pics based on: </p>
+            <ul>
+              <li className="eventtext">
+                Various fractures or failures. (e.g-brittle fracture of graphite
+                pencil nib while writing).
+              </li>
+              <li className="eventtext">
+                Materials showing Fatigue or Creep behavior. (e.g-connecting
+                rods of tyres in 4 wheelers showing fatigue behaviour).
+              </li>
+              <li className="eventtext">
+                Plastic deformation. (e.g-deformation of vehicle's mask due to
+                heavy collision).
+              </li>
+              <li className="eventtext">
+                Any macroscopic defects. (e.g-visible cracks on any surface).
+              </li>
+              <li className="eventtext">
+                Defective formed parts (e.g-defective utensils that are used for
+                cooking).
+              </li>
+            </ul>
+            <p className="eventtext">Rusty treasure---pics based on: </p>
+            <ul>
+              <li className="eventtext">
+                General types of corrosion (e.g-rust).
+              </li>
+              <li className="eventtext">
+                Special or rare corrosion phenomena's (e.g-pitting corrosion).
+              </li>
+              <li className="eventtext">
+                Preventing Corrosion creatively (e.g-Galvanization).
+              </li>
+            </ul>
+            <p className="eventtext">Weld the icon---pics based on: </p>
+            <ul>
+              <li className="eventtext">
+                Machines used for welding (e.g.- Mig welding).
+              </li>
+              <li className="eventtext">
+                General welded joint (e.g.- Tee joint, Butt joint).
+              </li>
+              <li className="eventtext">
+                Defects in welding (e.g.- hot cracking, undercut).
+              </li>
+            </ul>
+            <p className="eventtext">Guidelines: </p>
+            <ul>
+              <li className="eventtext">
+                Higher priority will be given to the creativity of snap while
+                evaluation.
+              </li>
+              <li className="eventtext">
+                The snap must be your original creation. It shouldn’t match with
+                materials on the internet.
+              </li>
+            </ul>
             <br />
 
             <CardTitle tag="h1">Updates</CardTitle>

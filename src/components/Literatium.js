@@ -63,17 +63,26 @@ class Literatium extends React.Component {
 
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
+              <li className="eventtext">The event will comprise two rounds.</li>
               <li className="eventtext">
-                A list of 10 topics is being given along with instructions.
+                For the first round, topics will be released on 18th June, and a
+                participant must choose a topic from the list And write an
+                article on it, with the word limit being 1000 words.
               </li>
               <li className="eventtext">
-                A participant must choose a topic from that list and write an
-                article on it.
+                The last date for submission of Round 1 will be on 23rd June.
               </li>
               <li className="eventtext">
-                {' '}
-                The word limit for the articles is xxxx words and submission
-                will be taken via google forms.
+                The top 10 contestants of 1st round will move on to the 2nd
+                round.
+              </li>
+              <li className="eventtext">
+                The topics for the 2nd round will be provided on 25th June.
+                (Word limit : 800 words)
+              </li>
+              <li className="eventtext">
+                The best article will also get a feature on the website and the
+                social media page along with prizes.
               </li>
             </ul>
 

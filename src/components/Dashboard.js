@@ -2,17 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import { createEvents } from '../actions/event'
-import {
-  Button,
-  Row,
-  Col,
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-} from 'reactstrap'
+import { Button, Row, Col, Card } from 'reactstrap'
 import EventItem from './EventItem'
 
 const Dashboard = (props) => {
@@ -24,14 +14,22 @@ const Dashboard = (props) => {
         <Button
           color="success"
           onClick={() => {
-            props.dispatch(createEvents())
-            window.location.reload()
+            // props.dispatch(createEvents())
+            // window.location.reload()
+            window.location.href =
+              'https://anveshaniitb.herokuapp.com/paymentinfo.html'
           }}
           disabled={props.event.hasPayed}
         >
           Make Payment !
         </Button>
       </p>
+      {!props.event.hasPayed && (
+        <p className="text-bold text-muted">
+          Please fill all the details in the userprofile in order to complete
+          your registration.
+        </p>
+      )}
       <hr />
       <Card className="bg-secondary shadow">
         <div className="card-header ">

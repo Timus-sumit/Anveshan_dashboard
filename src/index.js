@@ -6,7 +6,7 @@ import AppRoute, { history } from './router/AppRoute'
 import configureStore from './store/store'
 import { firebase } from './firebase/firebase'
 import { login, logout } from './actions/auth'
-import database from './firebase/firebase'
+// import database from './firebase/firebase'
 import LoadingPage from './components/LoadingPage'
 
 import './assets/plugins/nucleo/css/nucleo.css'
@@ -47,7 +47,7 @@ firebase.auth().onAuthStateChanged((user) => {
     store.dispatch(setEvents()).then(() => {
       renderApp()
       if (history.location.pathname === '/') {
-        history.push('/dashboard')
+        history.push('/userprofile')
       }
     })
     // renderApp();

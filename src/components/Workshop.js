@@ -1,5 +1,4 @@
 import React from 'react'
-import { Card, CardImg } from 'reactstrap'
 
 class Workshop extends React.Component {
   render() {
@@ -31,18 +30,21 @@ class Workshop extends React.Component {
                   <br />
                   <span>Program Highlights:</span>
                   <ul>
-                  <li>Induce a notion of the
-                  Potential of Machine Learning</li>
-                  <li>How ML can be Benificial to Metallurgical & Material Science
-                  Community</li>
+                    <li>
+                      Induce a notion of the Potential of Machine Learning
+                    </li>
+                    <li>
+                      How ML can be Benificial to Metallurgical & Material
+                      Science Community
+                    </li>
                   </ul>
                   <br />
-                  <span>Date | Time | Platform:</span>
+                  {/*<span>Date | Time | Platform:</span>
                   <br />
                   25th June 2021 | 18:00 (IST) or 6PM |Microsoft Teams
                   <div className="mt-4">
                     <a href="">Attend Workshop</a>
-                  </div>
+    </div> */}
                 </p>
               </div>
             </div>
@@ -75,12 +77,12 @@ class Workshop extends React.Component {
                     <li> Method for Removal of Organic Pollutants</li>
                   </ul>
                   <br />
-                  <span>Date | Time | Platform:</span>
+                  {/*<span>Date | Time | Platform:</span>
                   <br />
                   26th June 2021 | 18:00 (IST) or 6PM |Microsoft Teams
                   <div className="mt-4">
                     <a href="">Attend Workshop</a>
-                  </div>
+                  </div>*/}
                 </p>
               </div>
             </div>
@@ -107,20 +109,24 @@ class Workshop extends React.Component {
                   <br />
                   <span>Program Highlights:</span>
                   <ul>
-                    <li>Significance of photonic
-                    devices</li>
-                    <li>Existing techniques for fabricating photonic
-                    micro/nanostructures</li>
+                    <li>Significance of photonic devices</li>
+                    <li>
+                      Existing techniques for fabricating photonic
+                      micro/nanostructures
+                    </li>
                     <li> Two-photon lithography and its advantagess </li>
-                    <li> Modeling of a photonic micro/nanostructure using COMSOL</li>
+                    <li>
+                      {' '}
+                      Modeling of a photonic micro/nanostructure using COMSOL
+                    </li>
                   </ul>
                   <br />
-                  <span>Date | Time | Platform:</span>
+                  {/*<span>Date | Time | Platform:</span>
                   <br />
                   27th June 2021 | 18:00 (IST) or 6PM |Microsoft Teams
                   <div className="mt-4">
                     <a href="">Attend Workshop</a>
-                  </div>
+                  </div>*/}
                 </p>
               </div>
             </div>

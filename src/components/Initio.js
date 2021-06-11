@@ -43,49 +43,53 @@ class Initio extends React.Component {
           <CardBody>
             <CardTitle tag="h1">Event Description</CardTitle>
             <p className="eventtext">
-              Team Anveshan is overwhelmed to present yet another electrifying
-              event of this edition.
-              <br />
-              <br />
-              Initio intends to create a synergistic interaction between
-              academic research and industrial technologies. The participants
-              will be needed to tackle industry-defined problems in metallurgy
-              and propose innovative, out-of-the-box solutions by assimilating
-              their knowledge and critical thinking skills.
-              <br />
-              <br />
-              Initio aims at taking the academicians from class room to
-              industries by acquainting them with the real life problems faced
-              therein. You will be given real-life problems which are being
-              faced presently by various industries across the country. The
-              objective of this event is to put forth innovative and feasible
-              solutions to confront these problems which are hindering
-              production in the industries. As the name ‘INITIO’ suggests
-              ‘initiative’ or ‘beginning’, your solutions should be able to
-              replace the existing technologies and initiate new methods which
-              are practically feasible and economically viable.
+              Anveshan '21 brings you a floor for a synergistic interaction
+              between academia and industry. Academic research and industrial
+              technologies can collaborate to foster innovations and economic
+              growth. The idea behind this collaboration is to conceive a
+              logical solution to various challenges faced by the industries and
+              research institutes using your knowledge and wisdom. The
+              participants are introduced to the challenges faced by modern
+              industries across the globe. The event aims to put forth an
+              innovative yet sustainable solution to these problems. In the
+              event 'INITIO,' as the name suggests, 'initiative' or 'beginning,'
+              the solutions should replace or modify the existing technologies
+              and initiate unique, practically feasible, and economically viable
+              methods.
             </p>
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
               <li className="eventtext">
-                The first round is the abstract submission round. The problem
-                statement will be rolled out a month prior to the main event.
-                Participating teams will have to submit an abstract. Qualifying
-                teams will move to the next round.
+                The problem statement will be provided soon.
               </li>
               <li className="eventtext">
-                The second round will be a Presentation round held during the
-                meet. The shortlisted teams will have to deliver a presentation
-                showcasing their solution to the problem.
+                Each team can contain a said number by the respective industry.
+              </li>
+              <li className="eventtext">
+                First-round will be an abstract submission, and selected
+                students will take part in the finals.
+              </li>
+              <li className="eventtext">
+                In the final round, qualified teams are contacted and called
+                under a platform and asked to disclose their solutions and ideas
+                to all judges'.
               </li>
             </ul>
             <br />
-            <p className="eventtext">
-              {' '}
-              With industrial giants presenting problems and handsome monetary
-              rewards, this is the event to boast your monitoring and retorting
-              skills.
-            </p>
+            <CardTitle tag="h1">
+              Assessment will be based on the following parameters.
+            </CardTitle>
+            <ul>
+              <li className="eventtext">Address the problem.</li>
+              <li className="eventtext">Solution to the problem.</li>
+              <li className="eventtext">Feasibility of the solution.</li>
+              <li className="eventtext">Economic viability.</li>
+              <li className="eventtext">Practical Feasibility.</li>
+              <li className="eventtext">Sustainability</li>
+              <li className="eventtext">
+                Literature survey / Acknowledgement.
+              </li>
+            </ul>
 
             <br />
             <br />

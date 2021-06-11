@@ -28,6 +28,7 @@ const AppRoute = () => {
       <div>
         <Switch>
           <PublicRoute path="/" component={LoginPage} exact={true} />
+          <PrivateRoute path="/userprofile" component={UserProfile} />
           <PrivateRoute path="/dashboard" component={Dashboard} />
           <PrivateRoute path="/events" component={Events} />
           <PrivateRoute path="/Literatium" component={Literatium} />
@@ -40,7 +41,6 @@ const AppRoute = () => {
           <PrivateRoute path="/Quarks" component={Quarks} />
           <PrivateRoute path="/guestlectures" component={Guestlectures} />
           <PrivateRoute path="/workshop" component={Workshop} />
-          <PrivateRoute path="/userprofile" component={UserProfile} />
           <PrivateRoute path="/editprofile" component={EditProfile} />
         </Switch>
       </div>

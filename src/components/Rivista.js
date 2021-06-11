@@ -44,52 +44,39 @@ class Rivista extends React.Component {
           <CardBody>
             <CardTitle tag="h1">Event Description</CardTitle>
             <p className="eventtext">
-              Anveshan’21 presents a captivating and unique online platform to
-              emblazon one’s research skill culminating in the form of a paper
+              Anveshan '21 presents a captivating and unique online platform to
+              emblazon one's research skill culminating in the form of a paper
               and poster presentation contest- RIVISTA. This event gives an
               opportunity to display your work in the field of metallurgy
-              interactively to a group of scholars of eminent repute and also
-              receive feedback from the interested audience. It corroborates to
-              discuss the emerging technologies in this field and ideas in one’s
-              domain of interest with a variety of probable perspective,
-              outlook, and solution by the panel of judges. So, Gear up and
+              interactively to a group of scholars of eminent repute and receive
+              feedback from the interested audience. It corroborates to
+              discussion of the emerging technologies in this field and ideas in
+              one's domain of interest with various probable perspectives,
+              outlooks, and solutions by the panel of judges. So, Gear up and
               reveal your technical and presentation skills by chipping in at
-              our engaging platform by demonstrating them as paper and/or
-              poster.
+              our engaging platform by demonstrating them as ppt presentation.
             </p>
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
-              <li className="eventtext">PAPER PRESENTATION</li>
-              <ul>
-                <li>
-                  The first round is the abstract submission round. Qualifying
-                  teams will move to the next round.{' '}
-                </li>
-                <li>
-                  The second round will be a presentation round held during
-                  Anveshan’21 in which teams will have to deliver a presentation
-                  in front of a panel of judges.{' '}
-                </li>
-              </ul>
-              <li className="eventtext">POSTER PRESENTATION</li>
-              <ul>
-                <li>
-                  An original poster fulfilling the guidelines has to be
-                  presented during Anveshan’21.{' '}
-                </li>
-                <li>
-                  {' '}
-                  First round will be abstract submission round. Participants
-                  from each year will be separately evaluated. Qualified team
-                  will move to next round.{' '}
-                </li>
-                <li>
-                  {' '}
-                  Second round will be presentation round held during the
-                  Anveshan’21 in which teams will have to deliver their
-                  presentation in front of a panel of judges.{' '}
-                </li>
-              </ul>
+              <li className="eventtext">
+                The first round is the abstract submission round. Qualifying
+                teams will move to the next round.
+              </li>
+              <li className="eventtext">
+                The deadline for the first round will be 22nd June 2021, 11:59
+                PM.
+              </li>
+              <li className="eventtext">
+                The second round will be a presentation round held during
+                Anveshan ’21 in which teams will have to deliver a presentation
+                in front of a panel of judges.
+              </li>
+              <li className="eventtext">
+                The contestant has to pick one of the following topics and give
+                a presentation in front of the jury consisting of professors.
+                The presentation will be regarding an ongoing
+                research/experiment in the mentioned fields.
+              </li>
             </ul>
 
             <CardTitle tag="h1">Categories</CardTitle>

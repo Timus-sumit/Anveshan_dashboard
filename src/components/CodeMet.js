@@ -42,45 +42,40 @@ class CodeMet extends React.Component {
           <CardBody>
             <CardTitle tag="h1">Event Description</CardTitle>
             <p className="eventtext">
-              The disruptive digital technology and sustaining materials’
+              The disruptive digital technology and sustaining materials'
               innovation have merged to lutionize the dynamics of material
-              science study. Anveshan’21 brings CODEMET – an opportunity to
+              science study. Anveshan '21 brings CODEMET – an opportunity to
               amalgamate programming and practical processes to immerse you in
-              the realm of computation. This event's aim is to create the most
-              efficient code that gives the best solution to the problem by
-              applying fundamental programming and simulation tools
+              the realm of computation. This event aims to create the most
+              efficient code that best solves the problem by applying
+              fundamental programming and simulation tools.
               <br />
               <br />
             </p>
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
               <li className="eventtext">
-                CODEMET will be conducted on our partner’s website.
+                CODEMET will be conducted on HACKERRANK.
               </li>
               <li className="eventtext">
-                It is an online event, and the problems will be uploaded during
-                March/April.
+                It will be a 2-hour challenge with C++(GCC 5.3), java, python
+                being the languages allowed.
               </li>
               <li className="eventtext">
-                There will be four problems, and each question will have
+                There will be six problems, and each question will have
                 different points according to their difficulty level.
               </li>
               <li className="eventtext">
-                Participants will be evaluated based on the efficiency of their
-                program.
+                Participants will be evaluated based on the norms of Hackerrank.
               </li>
               <li className="eventtext">
-                There will be prizes for the top three winners for each problem
-                statement.
+                Questions will be based on metallurgical concepts amalgamated
+                with programming concepts like String, array, matrix, dynamic
+                programming, sorting, etc.
               </li>
               <li className="eventtext">
-                The final 3 participants in the points tally would be the
-                overall winners of CODEMET.
-              </li>
-              <li className="eventtext">
-                {' '}
-                The problems will be based on industrial computational
-                challenges faced in real life{' '}
+                The top 3 participants in the points tally would be the overall
+                winners of CODEMET and will be awarded.
               </li>
             </ul>
 
