@@ -4,11 +4,6 @@ import { connect } from 'react-redux'
 import { startLogout } from '../actions/auth'
 
 import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardTitle,
   Collapse,
   DropdownMenu,
   DropdownItem,
@@ -68,11 +63,11 @@ class Sidebar extends React.Component {
           <Nav className="align-items-center d-md-none">
             <UncontrolledDropdown nav>
               <DropdownToggle nav>
-                <Media className="align-items-center">
+                {/*<Media className="align-items-center">
                   <span className="avatar avatar-sm rounded-circle">
                     <img src={this.props.user.pic} />
                   </span>
-                </Media>
+                    </Media>*/}
               </DropdownToggle>
               <DropdownMenu className="dropdown-menu-arrow" right>
                 <DropdownItem className="noti-title" header tag="div">
@@ -118,10 +113,10 @@ class Sidebar extends React.Component {
                 <UncontrolledDropdown nav>
                   <DropdownToggle nav>
                     <Media className="align-items-center">
-                      <span className="avatar avatar-sm rounded-circle">
+                      {/*<span className="avatar avatar-sm rounded-circle">
                         <img src={this.props.user.pic} />
-                      </span>
-                      <Media className="ml-2 d-none d-lg-block">
+                        </span>*/}
+                      <Media className="d-none d-lg-block">
                         <span className="mb-2 text-white font-weight-bold">
                           {this.props.user.name}
                         </span>

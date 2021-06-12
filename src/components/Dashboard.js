@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
-import { createEvents } from '../actions/event'
+// import { createEvents } from '../actions/event'
 import { Button, Row, Col, Card } from 'reactstrap'
 import EventItem from './EventItem'
 
@@ -17,7 +17,7 @@ const Dashboard = (props) => {
             // props.dispatch(createEvents())
             // window.location.reload()
             window.location.href =
-              'https://anveshaniitb.herokuapp.com/paymentinfo.html'
+              'https://www.anveshaniitbhu.com/paymentinfo.html'
           }}
           disabled={props.event.hasPayed}
         >
