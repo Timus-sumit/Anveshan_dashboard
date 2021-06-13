@@ -65,12 +65,12 @@ class Literatium extends React.Component {
             <ul>
               <li className="eventtext">The event will comprise two rounds.</li>
               <li className="eventtext">
-                For the first round, topics will be released on 18th June, and a
+                For the first round, topics will be released on 17th June, and a
                 participant must choose a topic from the list And write an
                 article on it, with the word limit being 1000 words.
               </li>
               <li className="eventtext">
-                The last date for submission of Round 1 will be on 23rd June.
+                The last date for submission of Round 1 will be on 22rd June.
               </li>
               <li className="eventtext">
                 The top 10 contestants of 1st round will move on to the 2nd
