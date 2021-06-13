@@ -70,7 +70,7 @@ class Literatium extends React.Component {
                 article on it, with the word limit being 1000 words.
               </li>
               <li className="eventtext">
-                The last date for submission of Round 1 will be on 22rd June.
+                The last date for submission of Round 1 will be on 22nd June.
               </li>
               <li className="eventtext">
                 The top 10 contestants of 1st round will move on to the 2nd
