@@ -30,6 +30,11 @@ const Dashboard = (props) => {
           your registration.
         </p>
       )}
+      {props.event.hasPayed && (
+        <p className="text-bold text-muted">
+          You can now participate in different events by going to the event section.
+        </p>
+      )}
       <hr />
       <Card className="bg-secondary shadow">
         <div className="card-header ">

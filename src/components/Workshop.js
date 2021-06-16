@@ -19,10 +19,12 @@ class Workshop extends React.Component {
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <div class="icon-box">
-                <h4 class="title">Application of machine learning in
-                materials science using python</h4>
-                <br/>
-                <br/>
+                <h4 class="title">
+                  Application of machine learning in materials science using
+                  python
+                </h4>
+                <br />
+                <br />
                 <h4 class="title">Abhishek Kumar Thakur</h4>
                 <h2 className="affiliation">
                   Ph.D., The University of Arizona, United States
@@ -60,10 +62,11 @@ class Workshop extends React.Component {
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <div class="icon-box">
-                <h4 className="title">Carbon composite materials for organic
-                contaminant removal</h4>
-                <br/>
-                <br/>
+                <h4 className="title">
+                  Carbon composite materials for organic contaminant removal
+                </h4>
+                <br />
+                <br />
                 <h4 class="title">Dharmveer Yadav</h4>
                 <h2 className="affiliation">
                   Centre for Research in Nanotechnology and Science, India
@@ -99,10 +102,12 @@ class Workshop extends React.Component {
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <div class="icon-box">
-                <h4 className="title"> Introduction to Fabrication and Modeling
-                of Photonic Devices</h4>
-                <br/>
-                <br/>
+                <h4 className="title">
+                  {' '}
+                  Introduction to Fabrication and Modeling of Photonic Devices
+                </h4>
+                <br />
+                <br />
                 <h4 class="title">Sweta Rani</h4>
                 <h2 className="affiliation">
                   Research Scholar at IITB-Monash Research Academy, Indian

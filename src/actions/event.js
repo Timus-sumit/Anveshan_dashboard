@@ -85,12 +85,12 @@ export const setEvents = () => {
             name: events.name,
           })
         } else {
-          let mail = user.email;
-          const pos = mail.search('@');
-          const suffix = mail.substr(pos+1);
-          console.log(suffix);
+          let mail = user.email
+          const pos = mail.search('@')
+          const suffix = mail.substr(pos + 1)
+          console.log(suffix)
           let payed = false
-          if(suffix==='itbhu.ac.in' || suffix==='iitbhu.ac.in'){
+          if (suffix === 'itbhu.ac.in' || suffix === 'iitbhu.ac.in') {
             payed = true
           }
           const events = {
