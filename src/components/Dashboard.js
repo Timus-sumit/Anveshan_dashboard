@@ -32,7 +32,8 @@ const Dashboard = (props) => {
       )}
       {props.event.hasPayed && (
         <p className="text-bold text-muted">
-          You can now participate in different events by going to the event section.
+          You can now participate in different events by going to the event
+          section.
         </p>
       )}
       <hr />

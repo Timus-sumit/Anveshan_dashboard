@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 class Events extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Events extends React.Component {
             <div class="col-lg-6 d-flex flex-column justify-content-center">
               <div class="icon-box">
                 <br />
-                <h4 class="title">Breaking paradigms in steel technologies.</h4>
+                <h4 class="title">Breaking paradigms in steel technologies</h4>
                 <br />
                 <h4 class="title">Professor Sir H. K. D. Harry Bhadeshia</h4>
                 <h2 className="affiliation">
@@ -55,7 +56,7 @@ class Events extends React.Component {
                   <br />
                   25th June | 3:30 PM to 5:00 PM (IST) | Microsoft Teams
                   <div className="mt-4">
-                    <a href="">Attend Lecture</a>
+                    <Link to="/about">About the Speaker</Link>
                   </div>
                 </p>
               </div>
@@ -108,7 +109,7 @@ class Events extends React.Component {
                   <b />
                   26th June | 7:00 PM to 8:30 PM (IST) | Microsoft Teams
                   <div className="mt-4">
-                    <a href="">Attend Lecture</a>
+                    <Link to="/about">About the Speaker</Link>
                   </div>
                 </p>
               </div>
@@ -143,7 +144,7 @@ class Events extends React.Component {
                   <br />
                   27th June | 7:30 PM to 8:30 PM (IST) | Microsoft Teams
                   <div className="mt-4">
-                    <a href="">Attend Lecture</a>
+                    <Link to="/about">About the Speaker</Link>
                   </div>
                 </p>
               </div>

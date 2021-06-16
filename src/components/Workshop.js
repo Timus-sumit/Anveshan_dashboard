@@ -69,7 +69,7 @@ class Workshop extends React.Component {
                 <br />
                 <h4 class="title">Dharmveer Yadav</h4>
                 <h2 className="affiliation">
-                  Centre for Research in Nanotechnology and Science, India
+                  Centre for Research in Nanotechnology and Science, Indian
                   Institute of Technology Bombay, Mumbai, India
                 </h2>
                 <p class="description">
