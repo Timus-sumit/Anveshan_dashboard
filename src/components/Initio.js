@@ -102,7 +102,7 @@ class Initio extends React.Component {
             <br />
 
             {this.props.event.Initio ? (
-              <p>You have registered to this event !</p>
+              <p>You have been registered to this event !</p>
             ) : (
               <p>Click the Button to register in this event.</p>
             )}

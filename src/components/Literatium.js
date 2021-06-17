@@ -91,8 +91,13 @@ class Literatium extends React.Component {
 
             <CardTitle tag="h1">Updates</CardTitle>
             <p className="eventtext">
-              Updates for this event will be shown here.
+              <a href="https://docs.google.com/document/d/1Hx1DuuanFQ7Joh_KIWVngLQaO2p7waNxuz5sBEVTHl8/edit?usp=sharing
+              " target="_blank" rel="noopener noreferrer">Topic for First Round</a>
             </p>
+            {this.props.event.Literatium && <p className="eventtext">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIZ1rUsNsugr3ICsy0M5FFxwdK9p6VF93LdN3bn1RcUzPXyw/viewform?usp=sf_link" 
+            target="_blank" rel="noopener noreferrer">Submit Your Article</a>
+          </p>}
             <br />
             <br />
 
