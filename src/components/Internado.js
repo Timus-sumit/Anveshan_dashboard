@@ -29,7 +29,7 @@ class Internado extends React.Component {
           <CardImg
             top
             width="100%"
-            src="/events/INTERNADO.png"
+            src="/events/internado.png"
             alt="Card image cap"
           />
           <CardHeader className="bg-white border-0">

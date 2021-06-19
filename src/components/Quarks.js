@@ -29,7 +29,7 @@ class Quarks extends React.Component {
           <CardImg
             top
             width="100%"
-            src="/events/QUARKS.png"
+            src="/events/quarks.png"
             alt="Card image cap"
           />
           <CardHeader className="bg-white border-0">

@@ -27,7 +27,7 @@ class CodeMet extends React.Component {
           <CardImg
             top
             width="100%"
-            src="/events/CODEMET.png"
+            src="/events/codemet.png"
             alt="Card image cap"
           />
           <CardHeader className="bg-white border-0">
