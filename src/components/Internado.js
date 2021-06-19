@@ -79,13 +79,36 @@ class Internado extends React.Component {
 
             <CardTitle tag="h1">Updates</CardTitle>
             <p className="eventtext">
-              <a href="https://docs.google.com/document/d/1FV8b2D6BD5PeIbCk8pJy99vK8iYSkNFkfYMj8ly-hp8/edit?usp=sharing
-              " target="_blank" rel="noopener noreferrer">Problem Statement #1</a>
+              <a
+                href="https://docs.google.com/document/d/1FV8b2D6BD5PeIbCk8pJy99vK8iYSkNFkfYMj8ly-hp8/edit?usp=sharing
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Problem Statement #1
+              </a>
             </p>
-            {this.props.event.Internado && <p className="eventtext">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSda1R-eWdQ5UKCBi2uW0pCdYumIr0JNNk1V-KRVGXuJJuz7hw/viewform?usp=sf_link" 
-            target="_blank" rel="noopener noreferrer">Submit Your Abstract</a>
-          </p>}
+            <p className="eventtext">
+              <a
+                href="https://docs.google.com/document/d/1lduj14jBqinKLiD7XaNjvmQu6k8V4t2GtaEhK9cuNXY/edit?usp=sharing
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Problem Statement #2
+              </a>
+            </p>
+            {this.props.event.Internado && (
+              <p className="eventtext">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSda1R-eWdQ5UKCBi2uW0pCdYumIr0JNNk1V-KRVGXuJJuz7hw/viewform?usp=sf_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Submit Your Abstract
+                </a>
+              </p>
+            )}
             <br />
             <br />
 

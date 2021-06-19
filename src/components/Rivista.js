@@ -92,13 +92,22 @@ class Rivista extends React.Component {
             <br />
 
             <CardTitle tag="h1">Updates</CardTitle>
-            {!this.props.event.Rivista && <p className="eventtext">
-              Updates for this event will be shown here.
-            </p>}
-            {this.props.event.Rivista && <p className="eventtext">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbeaOzdXUg63oAguDDOD1qSItTh6vpHZeIRS5OnJW7sQbDIQ/viewform?usp=sf_link" 
-            target="_blank" rel="noopener noreferrer">Submit Your Abstract</a>
-          </p>}
+            {!this.props.event.Rivista && (
+              <p className="eventtext">
+                Updates for this event will be shown here.
+              </p>
+            )}
+            {this.props.event.Rivista && (
+              <p className="eventtext">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfbeaOzdXUg63oAguDDOD1qSItTh6vpHZeIRS5OnJW7sQbDIQ/viewform?usp=sf_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Submit Your Abstract
+                </a>
+              </p>
+            )}
             <br />
             <br />
 

@@ -96,8 +96,36 @@ class Initio extends React.Component {
 
             <CardTitle tag="h1">Updates</CardTitle>
             <p className="eventtext">
-              Updates for this event will be shown here.
+              <a
+                href="https://docs.google.com/document/d/1_XCcv8fJzF8SRWbfb8uCSN7pYjntQxdq13RnATRApiY/edit?usp=sharing
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Problem Statement #1
+              </a>
             </p>
+            <p className="eventtext">
+              <a
+                href="https://docs.google.com/document/d/1EP6i4qOeL_faWSQBYqisVlVnI1J6Ad2IoCO-HaI_mPM/edit?usp=sharing
+              "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Problem Statement #2
+              </a>
+            </p>
+            {this.props.event.Initio && (
+              <p className="eventtext">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdjwcC3Itxrt7BHTlQBLkykcIFifZoKoz9ZKuB2YPcDypHm0g/viewform?usp=sf_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Submit Your Abstract
+                </a>
+              </p>
+            )}
             <br />
             <br />
 

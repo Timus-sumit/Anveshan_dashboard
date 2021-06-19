@@ -55,8 +55,20 @@ class Events extends React.Component {
                   <span>Date | Time | Platform:</span>
                   <br />
                   25th June | 3:30 PM to 5:00 PM (IST) | Microsoft Teams
-                  <div className="mt-4">
-                    <Link to="/about">About the Speaker</Link>
+                  <div className="d-flex justify-content-between mt-4 mr-2">
+                    <p className="eventtext">
+                      <Link to="/about">About the Speaker</Link>
+                    </p>
+                    <p className="eventtext">
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfgY7G5cFYhaSCWeEDIgNcOomEdjerpCn8P-hhwushg6dSatQ/viewform?usp=sf_link
+              "
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Register here!
+                      </a>
+                    </p>
                   </div>
                 </p>
               </div>
@@ -106,10 +118,22 @@ class Events extends React.Component {
                   </ul>
                   <br />
                   <span>Date | Time | Platform:</span>
-                  <b />
+                  <br />
                   26th June | 7:00 PM to 8:30 PM (IST) | Microsoft Teams
-                  <div className="mt-4">
-                    <Link to="/about">About the Speaker</Link>
+                  <div className="d-flex justify-content-between mt-4 mr-2">
+                    <p className="eventtext">
+                      <Link to="/about">About the Speaker</Link>
+                    </p>
+                    <p className="eventtext">
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSd9-jihs-ddPGG1rP-1fOov4tNvqg4Cuc9E5OXvIta-qijj0w/viewform?usp=sf_link
+              "
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Register here!
+                      </a>
+                    </p>
                   </div>
                 </p>
               </div>
@@ -143,8 +167,20 @@ class Events extends React.Component {
                   <span>Date | Time | Platform:</span>
                   <br />
                   27th June | 7:30 PM to 8:30 PM (IST) | Microsoft Teams
-                  <div className="mt-4">
-                    <Link to="/about">About the Speaker</Link>
+                  <div className="d-flex justify-content-between mt-4 mr-2">
+                    <p className="eventtext">
+                      <Link to="/about">About the Speaker</Link>
+                    </p>
+                    <p className="eventtext">
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeXMMyBMa2p5FREMaageKYsJiZKaPNa1Wz_-Kl8zjnU8iaNvQ/viewform?usp=sf_link
+              "
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Register here!
+                      </a>
+                    </p>
                   </div>
                 </p>
               </div>

@@ -42,12 +42,21 @@ class Workshop extends React.Component {
                     </li>
                   </ul>
                   <br />
-                  {/*<span>Date | Time | Platform:</span>
+                  <span>Date | Time | Platform:</span>
                   <br />
-                  25th June 2021 | 18:00 (IST) or 6PM |Microsoft Teams
+                  26th June | 8:30 AM (IST) | Microsoft Teams
                   <div className="mt-4">
-                    <a href="">Attend Workshop</a>
-    </div> */}
+                  <p className="eventtext">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc-hmmejczf0lmWOAqTGHetcjPIVCG9n17Essu4D0TSivya1w/viewform?usp=sf_link
+                  "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register Here!
+                  </a>
+                </p>
+                  </div>
                 </p>
               </div>
             </div>
@@ -82,12 +91,21 @@ class Workshop extends React.Component {
                     <li> Method for Removal of Organic Pollutants</li>
                   </ul>
                   <br />
-                  {/*<span>Date | Time | Platform:</span>
+                  <span>Date | Time | Platform:</span>
                   <br />
-                  26th June 2021 | 18:00 (IST) or 6PM |Microsoft Teams
+                  26th June | 10:00 AM (IST) | Microsoft Teams
                   <div className="mt-4">
-                    <a href="">Attend Workshop</a>
-                  </div>*/}
+                  <p className="eventtext">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScJMTVk2IQ8uwEGL5wZqvwMu3WGfU6C29L0CjQQR8l4bB96tA/viewform?usp=sf_link
+                  "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register Here!
+                  </a>
+                </p>
+                  </div>
                 </p>
               </div>
             </div>
@@ -129,12 +147,21 @@ class Workshop extends React.Component {
                     </li>
                   </ul>
                   <br />
-                  {/*<span>Date | Time | Platform:</span>
+                  <span>Date | Time | Platform:</span>
                   <br />
-                  27th June 2021 | 18:00 (IST) or 6PM |Microsoft Teams
+                  27th June | 9:00 AM (IST) | Microsoft Teams
                   <div className="mt-4">
-                    <a href="">Attend Workshop</a>
-                  </div>*/}
+                  <p className="eventtext">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeZXzkAIrlrcXjWJDqOv3oXeLXw4CEXECDI5UR09YoxG0UxIg/viewform?usp=sf_link
+                  "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Register Here!
+                  </a>
+                </p>
+                  </div>
                 </p>
               </div>
             </div>

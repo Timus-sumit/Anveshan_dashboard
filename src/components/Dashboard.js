@@ -25,17 +25,19 @@ const Dashboard = (props) => {
         </Button>
       </p>
       {!props.event.hasPayed && (
-        <p className="text-bold text-muted">
-          Please fill all the details in the userprofile in order to complete
-          your registration.
+        <p className="text-bold ">
+        Please fill in all the details in the user profile to complete your registration.
         </p>
       )}
       {props.event.hasPayed && (
-        <p className="text-bold text-muted">
+        <p className="text-bold">
           You can now participate in different events by going to the event
           section.
         </p>
       )}
+      <p className="text-bold">
+      Workshops and Guest lectures are open to all. You can now attend them by going to their respective sections.
+      </p>
       <hr />
       <Card className="bg-secondary shadow">
         <div className="card-header ">

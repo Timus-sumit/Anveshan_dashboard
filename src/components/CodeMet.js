@@ -55,7 +55,7 @@ class CodeMet extends React.Component {
             <CardTitle tag="h1">Event Details</CardTitle>
             <ul>
               <li className="eventtext">
-                CODEMET will be conducted on HACKERRANK.
+                CODEMET will be conducted on our partners website.
               </li>
               <li className="eventtext">
                 It will be a 2-hour challenge with C++(GCC 5.3), java, python
@@ -66,16 +66,9 @@ class CodeMet extends React.Component {
                 different points according to their difficulty level.
               </li>
               <li className="eventtext">
-                Participants will be evaluated based on the norms of Hackerrank.
-              </li>
-              <li className="eventtext">
                 Questions will be based on metallurgical concepts amalgamated
                 with programming concepts like String, array, matrix, dynamic
                 programming, sorting, etc.
-              </li>
-              <li className="eventtext">
-                The top 3 participants in the points tally would be the overall
-                winners of CODEMET and will be awarded.
               </li>
             </ul>
 
