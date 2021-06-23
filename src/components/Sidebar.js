@@ -153,6 +153,11 @@ class Sidebar extends React.Component {
                 </Link>
               </NavItem>
               <NavItem className="pl-4">
+                <Link to="/techtalk">
+                  <p className="text-white  ">TechTalk</p>
+                </Link>
+              </NavItem>
+              <NavItem className="pl-4">
                 <NavLink to="/userprofile">
                   <p className="text-white ">User Profile</p>
                 </NavLink>

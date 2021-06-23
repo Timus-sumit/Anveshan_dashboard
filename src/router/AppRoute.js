@@ -20,6 +20,7 @@ import EditProfile from '../components/EditProfile'
 import Guestlectures from '../components/GuestLectures'
 import Workshop from '../components/Workshop'
 import AboutGuest from '../components/AboutGuest'
+import TechTalk from '../components/Techtalk'
 
 export const history = createHistory()
 
@@ -44,6 +45,7 @@ const AppRoute = () => {
           <PrivateRoute path="/workshop" component={Workshop} />
           <PrivateRoute path="/editprofile" component={EditProfile} />
           <PrivateRoute path="/about" component={AboutGuest} />
+          <PrivateRoute path="/techtalk" component={TechTalk} />
         </Switch>
       </div>
     </Router>

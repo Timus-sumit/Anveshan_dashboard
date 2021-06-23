@@ -26,7 +26,8 @@ const Dashboard = (props) => {
       </p>
       {!props.event.hasPayed && (
         <p className="text-bold ">
-        Please fill in all the details in the user profile to complete your registration.
+          Please fill in all the details in the user profile to complete your
+          registration.
         </p>
       )}
       {props.event.hasPayed && (
@@ -36,7 +37,8 @@ const Dashboard = (props) => {
         </p>
       )}
       <p className="text-bold">
-      Workshops and Guest lectures are open to all. You can now attend them by going to their respective sections.
+        Workshops and Guest lectures are open to all. You can now attend them by
+        going to their respective sections.
       </p>
       <hr />
       <Card className="bg-secondary shadow">
@@ -44,8 +46,10 @@ const Dashboard = (props) => {
           <div className="align-items-center row">
             <div className="col text-center">
               <h2 className="mb-0">Your Events</h2>
-              <br/>
-              <p>New Updates: <NavLink to="/workshop">Workshops</NavLink></p>
+              <br />
+              <p>
+                New Updates: <NavLink to="/techtalk">TechTalk</NavLink>
+              </p>
               {!props.event.hasPayed && (
                 <p className="text-muted">
                   Please pay the registration fees in order to register in
