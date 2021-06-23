@@ -44,6 +44,8 @@ const Dashboard = (props) => {
           <div className="align-items-center row">
             <div className="col text-center">
               <h2 className="mb-0">Your Events</h2>
+              <br/>
+              <p>New Updates: <NavLink to="/workshop">Workshops</NavLink></p>
               {!props.event.hasPayed && (
                 <p className="text-muted">
                   Please pay the registration fees in order to register in
