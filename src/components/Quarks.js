@@ -83,19 +83,17 @@ class Quarks extends React.Component {
             <br />
 
             <CardTitle tag="h1">Updates</CardTitle>
-            <p className="eventtext">
-              Updates for this event will be shown here.
-            </p>
+            <p className="eventtext">Registration Closed</p>
             <br />
             <br />
 
             {this.props.event.Quarks ? (
               <p>You have been registered to this event !</p>
             ) : (
-              <p>Click the Button to register in this event.</p>
+              <p></p>
             )}
 
-            {this.props.event.Quarks ? (
+            {/*this.props.event.Quarks ? (
               <Button
                 onClick={() => {
                   this.props.dispatch(
@@ -120,7 +118,7 @@ class Quarks extends React.Component {
               >
                 Register !
               </Button>
-            )}
+              )*/}
           </CardBody>
         </Card>
       </div>

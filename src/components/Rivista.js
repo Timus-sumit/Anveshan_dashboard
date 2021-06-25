@@ -108,16 +108,17 @@ class Rivista extends React.Component {
                 </a>
               </p>
             )}
+            <p className="eventtext">Registration Closed</p>
             <br />
             <br />
 
             {this.props.event.Rivista ? (
               <p>You have been registered to this event !</p>
             ) : (
-              <p>Click the Button to register in this event.</p>
+              <p></p>
             )}
 
-            {this.props.event.Rivista ? (
+            {/*this.props.event.Rivista ? (
               <Button
                 onClick={() => {
                   this.props.dispatch(
@@ -142,7 +143,7 @@ class Rivista extends React.Component {
               >
                 Register !
               </Button>
-            )}
+              )*/}
           </CardBody>
         </Card>
       </div>

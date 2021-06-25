@@ -113,16 +113,17 @@ class Metcon extends React.Component {
                 </a>
               </p>
             )}
+            <p className="eventtext">Registration Closed</p>
             <br />
             <br />
 
             {this.props.event.Metcon ? (
               <p>You have registered to this event !</p>
             ) : (
-              <p>Click the Button to register in this event.</p>
+              <p></p>
             )}
 
-            {this.props.event.Metcon ? (
+            {/*this.props.event.Metcon ? (
               <Button
                 onClick={() => {
                   this.props.dispatch(
@@ -147,7 +148,7 @@ class Metcon extends React.Component {
               >
                 Register !
               </Button>
-            )}
+              )*/}
           </CardBody>
         </Card>
       </div>
